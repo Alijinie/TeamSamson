@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeamSamson — Close Protection, VIP Security, Protocol & Consulting | Mowe, Ogun State</title>
+<meta name="description" content="TeamSamson provides close protection, VIP security, protocol management and security consulting from Profound Groups Complex, Redemption City, Mowe, Ogun State. Discreet, vetted, 24/7 operatives for executives, VIPs, events and organisations.">
+<meta name="theme-color" content="#0a0e13">
+<meta property="og:title" content="TeamSamson — Close Protection & VIP Security">
+<meta property="og:description" content="Close Protection • VIP Security • Protocol Management • Consulting. Based in Redemption City, Mowe, Ogun State. Available 24/7.">
+<meta property="og:type" content="website">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Oswald','Arial Narrow','sans-serif'],
+        body: ['Inter','system-ui','sans-serif']
+      },
+      colors: {
+        ink: '#0a0e13',
+        surface: '#111823',
+        surface2: '#182231',
+        hair: '#2a3648',
+        gold: '#c8a84b',
+        goldsoft: '#e6cd8a',
+        paper: '#eef1f5',
+        muted: '#93a0b4'
+      }
+    }
+  }
+}
+</script>
+<style>
+  :root{ --gold:#c8a84b; --bg:#0a0e13; }
+  body{ background:#0a0e13; color:#eef1f5; }
+  ::selection{ background:#c8a84b; color:#0a0e13; }
+  .hairline{ border-color:#2a3648; }
+  .btn-gold{ background:linear-gradient(100deg,#c8a84b,#e6cd8a); color:#0a0e13; }
+  .btn-gold:hover{ filter:brightness(1.07); }
+  .hero-grid{
+    background-image:linear-gradient(rgba(200,168,75,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(200,168,75,.07) 1px,transparent 1px);
+    background-size:44px 44px;
+    mask-image:radial-gradient(ellipse at 60% 40%, black 40%, transparent 75%);
+  }
+  .shield-glow{ background:radial-gradient(circle at 70% 30%, rgba(200,168,75,.18), transparent 55%), radial-gradient(circle at 20% 80%, rgba(38,92,160,.25), transparent 55%); }
+  .tick{ color:#c8a84b; font-weight:700; }
+  .tab-btn{ font-size:.8rem; font-weight:700; padding:.55rem .95rem; border-radius:999px; border:1px solid #2a3648; color:#93a0b4; white-space:nowrap; transition:.2s; }
+  .tab-btn.active{ background:#c8a84b; border-color:#c8a84b; color:#0a0e13; }
+  .accordion-item{ border:1px solid #2a3648; border-radius:.6rem; background:#111823; overflow:hidden; }
+  .accordion-q{ width:100%; text-align:left; padding:.9rem 1rem; font-weight:600; font-size:.9rem; display:flex; justify-content:space-between; gap:1rem; align-items:center; }
+  .accordion-a{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
+  .accordion-item.open .accordion-a{ max-height:320px; }
+  .accordion-item.open .acc-icon{ transform:rotate(45deg); }
+  .acc-icon{ transition:.25s; color:#c8a84b; font-size:1.2rem; line-height:1; }
+  input,select,textarea{ background:#182231; border:1px solid #2a3648; color:#eef1f5; }
+  input::placeholder,textarea::placeholder{ color:#93a0b4; }
+  select option{ background:#182231; }
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{ outline:2px solid #c8a84b; outline-offset:2px; }
+  .modal[aria-hidden="true"]{ display:none; }
+  .modal-panel{ animation:pop .28s ease both; max-height:calc(100vh - 3rem); display:flex; flex-direction:column; overflow:hidden; }
+  @keyframes pop{ from{opacity:0; transform:translateY(12px) scale(.98);} to{opacity:1; transform:none;} }
+  .modal-scroll{ overflow-y:auto; scrollbar-width:thin; }
+  html{ scroll-behavior:smooth; }
+</style>
+</head>
+<body class="font-body antialiased" id="top">
+
+<!-- TOP BAR -->
+<div class="bg-surface border-b hairline text-xs">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-2 flex flex-wrap items-center justify-between gap-2 text-paper/70">
+    <p class="flex items-center gap-2">
+      <span class="text-gold">◈</span>
+      <span>Profound Groups Complex, Redemption City, Mowe, Ogun State</span>
+    </p>
+    <div class="flex items-center gap-4">
+      <a href="mailto:profoundhospitalities@gmail.com" class="hover:text-goldsoft transition">profoundhospitalities@gmail.com</a>
+      <a href="https://wa.me/2348055223392" target="_blank" rel="noopener" class="hover:text-goldsoft transition font-semibold">+234 805 522 3392</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<header class="sticky top-0 z-40 bg-ink/90 backdrop-blur-md border-b hairline">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 h-[72px] flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3">
+      <span class="w-10 h-10 rounded-md bg-gradient-to-br from-gold to-goldsoft flex items-center justify-center font-display font-bold text-ink text-xl">S</span>
+      <span class="leading-none">
+        <span class="font-display text-xl tracking-wide block">TEAM<span class="text-gold">SAMSON</span></span>
+        <span class="text-[10px] uppercase tracking-[.2em] text-muted">Protection • Protocol • Consulting</span>
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm text-paper/70">
+      <a href="#services" class="hover:text-paper transition">Services</a>
+      <a href="#why" class="hover:text-paper transition">Why Us</a>
+      <a href="#protocol" class="hover:text-paper transition">Protocol</a>
+      <a href="#coverage" class="hover:text-paper transition">Coverage</a>
+      <a href="#faq" class="hover:text-paper transition">FAQ</a>
+      <a href="#contact" class="hover:text-paper transition">Contact</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20protection%20%2F%20protocol%20support." target="_blank" rel="noopener" class="hidden sm:inline-flex text-sm border hairline hover:border-gold px-4 py-2 rounded-md transition">WhatsApp</a>
+      <button onclick="openModal('quote-modal')" class="btn-gold font-semibold text-sm px-4 py-2.5 rounded-md">Request Cover</button>
+      <button id="menu-btn" class="md:hidden border hairline rounded-md px-3 py-2 text-sm" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">☰</button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t hairline bg-surface px-5 py-4 space-y-3 text-sm">
+    <a href="#services" class="block">Services</a>
+    <a href="#why" class="block">Why Us</a>
+    <a href="#protocol" class="block">Protocol</a>
+    <a href="#coverage" class="block">Coverage</a>
+    <a href="#faq" class="block">FAQ</a>
+    <a href="#contact" class="block font-semibold text-gold">Contact / Request Cover →</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="relative overflow-hidden border-b hairline">
+  <div class="absolute inset-0 hero-grid"></div>
+  <div class="absolute inset-0 shield-glow"></div>
+  <div class="relative max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24 grid lg:grid-cols-[1.2fr_.8fr] gap-12 items-center">
+    <div>
+      <p class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.18em] border border-gold/40 bg-gold/10 text-goldsoft rounded-full px-4 py-1.5 mb-5">
+        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Available 24/7 — Lagos • Ogun • Abuja • Nationwide
+      </p>
+      <h1 class="font-display text-5xl md:text-7xl leading-[.95] mb-5">
+        DISCREET<br>PROTECTION.<br><span class="text-gold">TOTAL PROTOCOL.</span>
+      </h1>
+      <p class="text-paper/70 text-base md:text-lg max-w-xl leading-relaxed mb-8">
+        TeamSamson provides <strong class="text-paper">close protection, VIP security, protocol management and security consulting</strong> for executives, families, clergy, dignitaries, events and organisations. Vetted operatives. Quiet movement. Zero embarrassment.
+      </p>
+      <div class="flex flex-wrap gap-3 mb-8">
+        <button onclick="openModal('quote-modal')" class="btn-gold font-bold text-sm px-6 py-3.5 rounded-md">Request Protection Cover →</button>
+        <a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20urgent%20security%20cover." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold text-sm px-6 py-3.5 rounded-md hover:brightness-95 transition">
+          Chat on WhatsApp
+        </a>
+        <a href="mailto:profoundhospitalities@gmail.com" class="inline-flex items-center border hairline hover:border-gold text-sm font-semibold px-6 py-3.5 rounded-md transition">Email Us</a>
+      </div>
+      <div class="grid grid-cols-3 max-w-md gap-4 border-t hairline pt-6">
+        <div><p class="font-display text-2xl md:text-3xl text-gold">24/7</p><p class="text-xs text-muted">Rapid response & standby teams</p></div>
+        <div><p class="font-display text-2xl md:text-3xl text-gold">100%</p><p class="text-xs text-muted">Vetted, trained operatives</p></div>
+        <div><p class="font-display text-2xl md:text-3xl text-gold">4</p><p class="text-xs text-muted">Core disciplines, one command</p></div>
+      </div>
+    </div>
+    <div class="bg-surface border hairline rounded-xl p-6 md:p-7">
+      <p class="text-[11px] uppercase tracking-[.18em] text-goldsoft font-bold mb-1">Threat check — 60 seconds</p>
+      <h3 class="font-display text-2xl mb-4">Do you need cover?</h3>
+      <div class="space-y-2 text-sm" id="threat-check">
+        <label class="flex items-start gap-2 border hairline rounded-md p-3 cursor-pointer hover:border-gold transition"><input type="checkbox" class="mt-1 accent-[#c8a84b]"> <span>You are a public figure, executive, clergy or dignitary with visible movement</span></label>
+        <label class="flex items-start gap-2 border hairline rounded-md p-3 cursor-pointer hover:border-gold transition"><input type="checkbox" class="mt-1 accent-[#c8a84b]"> <span>You have an event, arrival, convoy, church programme or tour coming up</span></label>
+        <label class="flex items-start gap-2 border hairline rounded-md p-3 cursor-pointer hover:border-gold transition"><input type="checkbox" class="mt-1 accent-[#c8a84b]"> <span>You have received threats, unwanted attention, or crowd-control concerns</span></label>
+        <label class="flex items-start gap-2 border hairline rounded-md p-3 cursor-pointer hover:border-gold transition"><input type="checkbox" class="mt-1 accent-[#c8a84b]"> <span>You need airport pickup, escort, or guest / VIP protocol handling</span></label>
+      </div>
+      <p id="threat-result" class="hidden mt-3 text-sm border border-gold/40 bg-gold/10 rounded-md p-3"></p>
+      <button onclick="openModal('quote-modal')" class="w-full btn-gold font-bold text-sm mt-4 py-3 rounded-md">Get assessed on WhatsApp</button>
+      <p class="text-[11px] text-muted mt-2 text-center">No obligation. Assessment is confidential.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="border-b hairline bg-surface/50">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-6 flex flex-wrap gap-x-8 gap-y-2 text-xs text-paper/60">
+    <span><span class="tick">✓</span> Background-checked operatives</span>
+    <span><span class="tick">✓</span> Confidentiality by default</span>
+    <span><span class="tick">✓</span> Uniformed or plain-clothes</span>
+    <span><span class="tick">✓</span> Events, churches, corporates, families</span>
+    <span><span class="tick">✓</span> Redemption City base, nationwide deployment</span>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24">
+  <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2">What we do</p>
+  <h2 class="font-display text-4xl md:text-5xl mb-3">Four disciplines. One standard: <span class="text-gold">no incidents.</span></h2>
+  <p class="text-paper/60 max-w-2xl mb-10">Tap any service for full details, what's included, and how to book. Every deployment starts with a confidential threat & route assessment.</p>
+  <div id="services-grid" class="grid sm:grid-cols-2 gap-4"></div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="border-y hairline bg-surface/40">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24 grid lg:grid-cols-2 gap-12">
+    <div>
+      <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2">Why TeamSamson</p>
+      <h2 class="font-display text-4xl md:text-5xl mb-5">Security that respects your image.</h2>
+      <p class="text-paper/70 leading-relaxed mb-6">Anyone can stand at a gate. Our work is different: advance route checks, arrival choreography, crowd buffers, and operatives who know when to be visible — and when to disappear. Principals keep their dignity. Hosts keep their programme on time. Guests feel honoured, not harassed.</p>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-3"><span class="tick">✓</span><span><strong>Advance work first:</strong> venue recce, route planning, hospital & exit mapping before boots hit ground.</span></li>
+        <li class="flex gap-3"><span class="tick">✓</span><span><strong>Protocol-grade manners:</strong> trained in arrivals, seating, escort order, clergy & cultural courtesies.</span></li>
+        <li class="flex gap-3"><span class="tick">✓</span><span><strong>Scalable teams:</strong> 1 close-protection officer to full detail — drivers, advance party, event marshals.</span></li>
+        <li class="flex gap-3"><span class="tick">✓</span><span><strong>Reports & debrief:</strong> incident log, photos where permitted, and recommendations after every job.</span></li>
+      </ul>
+    </div>
+    <div class="space-y-3">
+      <div class="bg-ink border hairline rounded-lg p-5"><p class="font-display text-lg mb-1">Executive & Family Cover</p><p class="text-sm text-paper/60">Daily detail, school runs, travel escort, residential checks. Plain-clothes where you want privacy.</p></div>
+      <div class="bg-ink border hairline rounded-lg p-5"><p class="font-display text-lg mb-1">Churches, Camps & Crusades</p><p class="text-sm text-paper/60">Pulpit protection, altar-call crowd control, minister's convoy, camp-meeting traffic & gate protocol — our home ground around Redemption City.</p></div>
+      <div class="bg-ink border hairline rounded-lg p-5"><p class="font-display text-lg mb-1">Corporate, Weddings & Events</p><p class="text-sm text-paper/60">Access control, backstage holding, VVIP arrival sequence, anti-disruption teams for launches, concerts and owambe.</p></div>
+      <div class="bg-ink border border-gold/40 rounded-lg p-5"><p class="font-display text-lg mb-1 text-goldsoft">Need something this week?</p><p class="text-sm text-paper/70 mb-3">Dates are held on confirmation. Message us the date, location and principal profile.</p><a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20have%20a%20date%20to%20cover." target="_blank" rel="noopener" class="inline-block btn-gold text-sm font-bold px-5 py-2.5 rounded-md">Check availability →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROTOCOL -->
+<section id="protocol" class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24">
+  <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2">How we work</p>
+  <h2 class="font-display text-4xl md:text-5xl mb-10">From first call to safe dismissal.</h2>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="border-l-2 border-gold pl-4"><p class="font-display text-3xl text-goldsoft">01</p><h3 class="font-semibold mb-1">Confidential briefing</h3><p class="text-sm text-paper/60">WhatsApp, call or email. Principal profile, dates, venues, known concerns. NDA on request.</p></div>
+    <div class="border-l-2 border-gold pl-4"><p class="font-display text-3xl text-goldsoft">02</p><h3 class="font-semibold mb-1">Risk & route assessment</h3><p class="text-sm text-paper/60">We recce venues and routes, grade the threat, and propose team size — no overselling.</p></div>
+    <div class="border-l-2 border-gold pl-4"><p class="font-display text-3xl text-goldsoft">03</p><h3 class="font-semibold mb-1">Deployment & protocol</h3><p class="text-sm text-paper/60">Advance party, close detail, drivers and marshals in position. Arrivals choreographed to the minute.</p></div>
+    <div class="border-l-2 border-gold pl-4"><p class="font-display text-3xl text-goldsoft">04</p><h3 class="font-semibold mb-1">Debrief & report</h3><p class="text-sm text-paper/60">Safe dismissal, incident log, and written recommendations for next time.</p></div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section id="coverage" class="border-y hairline bg-surface/40">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-20 grid lg:grid-cols-[1fr_1fr] gap-10">
+    <div>
+      <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2">Coverage</p>
+      <h2 class="font-display text-4xl mb-4">Based in Mowe. Deployed nationwide.</h2>
+      <p class="text-sm text-paper/65 leading-relaxed mb-4">Headquarters: <strong class="text-paper">Profound Groups Complex, Redemption City, Mowe, Ogun State</strong> — minutes from the Lagos–Ibadan Expressway, ideal for rapid dispatch to Lagos, Ogun, Oyo, and Abuja runs, plus airport meet-and-greet (LOS) and interstate convoys.</p>
+      <div class="flex flex-wrap gap-2 text-xs">
+        <span class="border hairline rounded-full px-3 py-1.5">Redemption City / Mowe</span>
+        <span class="border hairline rounded-full px-3 py-1.5">Ikeja • Lekki • VI • Ikoyi</span>
+        <span class="border hairline rounded-full px-3 py-1.5">Abeokuta • Ibadan</span>
+        <span class="border hairline rounded-full px-3 py-1.5">Abuja • Nationwide</span>
+        <span class="border hairline rounded-full px-3 py-1.5">Airport (LOS) pickup</span>
+      </div>
+    </div>
+    <div class="bg-ink border hairline rounded-lg p-6">
+      <p class="text-[11px] uppercase tracking-[.18em] text-goldsoft font-bold mb-3">Typical deployments</p>
+      <ul class="text-sm space-y-2.5 text-paper/75">
+        <li>→ Single CPO for a day — executive movement in Lagos</li>
+        <li>→ 2-man detail + driver — clergy / family weekend cover</li>
+        <li>→ Arrival & protocol team (4–8) — weddings, funerals, launches</li>
+        <li>→ Full event security (10+) — crusades, concerts, camp meetings</li>
+        <li>→ Risk audit & SOP drafting — estates, schools, churches, firms</li>
+      </ul>
+      <button onclick="openModal('quote-modal')" class="mt-5 w-full btn-gold font-bold text-sm py-3 rounded-md">Describe your job — get a quote</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-3xl mx-auto px-5 md:px-8 py-16 md:py-24">
+  <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2 text-center">Questions</p>
+  <h2 class="font-display text-4xl md:text-5xl mb-8 text-center">Before you call.</h2>
+  <div class="space-y-2" id="faq-list"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="border-t hairline bg-surface/40">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24 grid lg:grid-cols-[1fr_1.2fr] gap-10">
+    <div>
+      <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2">Contact</p>
+      <h2 class="font-display text-4xl md:text-5xl mb-3">Talk to command.</h2>
+      <p class="text-paper/60 mb-8 max-w-sm">Fastest is WhatsApp. For formal requests, email or the brief form — we reply with assessment and quote.</p>
+      <div class="space-y-3">
+        <a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20security%20cover." target="_blank" rel="noopener" class="flex items-center justify-between border hairline hover:border-[#25D366]/60 rounded-md px-5 py-4 transition bg-ink">
+          <div><p class="text-sm font-semibold">WhatsApp (24/7)</p><p class="text-xs text-muted">+234 805 522 3392 — tap to chat</p></div>
+          <span class="text-xs text-[#25D366] font-bold">Chat now →</span>
+        </a>
+        <a href="mailto:profoundhospitalities@gmail.com?subject=Security%20Cover%20Request%20—%20TeamSamson" class="flex items-center justify-between border hairline hover:border-gold/60 rounded-md px-5 py-4 transition bg-ink">
+          <div><p class="text-sm font-semibold">Email</p><p class="text-xs text-muted">profoundhospitalities@gmail.com</p></div>
+          <span class="text-xs text-goldsoft font-bold">Write →</span>
+        </a>
+        <div class="flex items-center justify-between border hairline rounded-md px-5 py-4 bg-ink">
+          <div><p class="text-sm font-semibold">Base</p><p class="text-xs text-muted">Profound Groups Complex, Redemption City, Mowe, Ogun State</p></div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Redemption+City+Mowe+Ogun+State" target="_blank" rel="noopener" class="text-xs text-goldsoft font-bold">Map →</a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-ink border hairline rounded-lg p-6 md:p-8">
+      <p class="text-xs text-muted mb-1">Protection brief</p>
+      <h3 class="font-display text-2xl mb-5">Tell us what needs covering</h3>
+      <form class="space-y-3" onsubmit="submitBrief(event)">
+        <div class="grid sm:grid-cols-2 gap-3">
+          <input required name="name" placeholder="Your name *" class="rounded-md px-4 py-3 text-sm w-full">
+          <input required name="phone" placeholder="Phone / WhatsApp *" class="rounded-md px-4 py-3 text-sm w-full">
+        </div>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <select required name="service" class="rounded-md px-4 py-3 text-sm w-full">
+            <option value="" disabled selected>Service needed *</option>
+            <option>Close Protection</option>
+            <option>VIP Security</option>
+            <option>Protocol Management</option>
+            <option>Security Consulting</option>
+            <option>Event Cover (mixed)</option>
+            <option>Other / Not sure</option>
+          </select>
+          <input name="date" type="date" class="rounded-md px-4 py-3 text-sm w-full">
+        </div>
+        <input name="location" placeholder="Location(s) — e.g. Redemption City + Ikeja" class="rounded-md px-4 py-3 text-sm w-full">
+        <textarea name="details" rows="3" placeholder="Principals, guest count, venues, concerns…" class="rounded-md px-4 py-3 text-sm w-full"></textarea>
+        <button type="submit" class="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:brightness-95 text-white font-bold py-3.5 rounded-md transition text-sm">Send Brief via WhatsApp</button>
+        <a href="mailto:profoundhospitalities@gmail.com" class="block text-center text-xs text-muted hover:text-paper transition">Prefer email? profoundhospitalities@gmail.com</a>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="border-t hairline">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-10 flex flex-col md:flex-row justify-between gap-6">
+    <div>
+      <p class="font-display text-lg">TEAM<span class="text-gold">SAMSON</span></p>
+      <p class="text-sm text-goldsoft italic mt-1">Discreet protection. Total protocol.</p>
+      <p class="text-xs text-muted mt-2">Profound Groups Complex, Redemption City, Mowe, Ogun State</p>
+    </div>
+    <div class="text-sm text-paper/50 space-y-1 md:text-right">
+      <p>WhatsApp: <a class="hover:text-paper" href="https://wa.me/2348055223392">+234 805 522 3392</a></p>
+      <p>Email: <a class="hover:text-paper" href="mailto:profoundhospitalities@gmail.com">profoundhospitalities@gmail.com</a></p>
+      <p class="text-muted" id="footer-year"></p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20security%20cover." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] shadow-lg shadow-black/40 flex items-center justify-center hover:brightness-95 transition">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.57L4 20l1.02-4.5A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+</a>
+
+<!-- SERVICE MODAL -->
+<div id="service-modal" class="modal fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="absolute inset-0 bg-black/80" onclick="closeModal('service-modal')"></div>
+  <div class="absolute inset-0 overflow-y-auto p-3 md:p-6 flex items-start md:items-center justify-center" onclick="if(event.target===this)closeModal('service-modal')">
+    <div class="modal-panel bg-surface border hairline w-full max-w-2xl rounded-lg relative my-4 shadow-2xl">
+      <div class="flex items-center justify-between gap-3 px-5 md:px-7 py-4 border-b hairline sticky top-0 bg-surface2/80 rounded-t-lg">
+        <div><p class="text-[11px] uppercase tracking-[.18em] text-goldsoft font-bold">Service details</p><h3 id="service-modal-title" class="font-display text-lg leading-tight">Service</h3></div>
+        <button onclick="closeModal('service-modal')" class="text-xs font-bold border hairline rounded-full px-4 py-2 hover:border-gold transition">✕ Close</button>
+      </div>
+      <div class="modal-scroll px-5 md:px-7 py-5"><div id="service-modal-body"></div></div>
+      <div class="flex flex-col sm:flex-row gap-2 px-5 md:px-7 py-4 border-t hairline bg-black/20 rounded-b-lg">
+        <button onclick="closeModal('service-modal')" class="flex-1 text-sm font-semibold px-5 py-2.5 rounded-md border hairline hover:border-gold transition">← Back</button>
+        <button onclick="closeModal('service-modal');openModal('quote-modal')" class="flex-1 btn-gold text-sm font-bold px-5 py-2.5 rounded-md">Request this service</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- QUOTE MODAL -->
+<div id="quote-modal" class="modal fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="absolute inset-0 bg-black/80" onclick="closeModal('quote-modal')"></div>
+  <div class="absolute inset-0 overflow-y-auto p-3 md:p-6 flex items-start md:items-center justify-center" onclick="if(event.target===this)closeModal('quote-modal')">
+    <div class="modal-panel bg-surface border hairline w-full max-w-xl rounded-lg relative my-4 shadow-2xl">
+      <div class="flex items-center justify-between gap-3 px-5 md:px-7 py-4 border-b hairline sticky top-0 bg-surface2/80 rounded-t-lg">
+        <div><p class="text-[11px] uppercase tracking-[.18em] text-goldsoft font-bold">Request cover</p><h3 class="font-display text-lg leading-tight">Protection brief</h3></div>
+        <button onclick="closeModal('quote-modal')" class="text-xs font-bold border hairline rounded-full px-4 py-2 hover:border-gold transition">✕ Close</button>
+      </div>
+      <div class="modal-scroll px-5 md:px-7 py-5">
+        <form id="quote-form" class="space-y-3" onsubmit="submitBrief(event)">
+          <div class="grid sm:grid-cols-2 gap-3">
+            <input required name="name" placeholder="Your name *" class="rounded-md px-4 py-3 text-sm w-full">
+            <input required name="phone" placeholder="Phone / WhatsApp *" class="rounded-md px-4 py-3 text-sm w-full">
+          </div>
+          <select required name="service" id="quote-service" class="rounded-md px-4 py-3 text-sm w-full">
+            <option value="" disabled selected>Service needed *</option>
+            <option>Close Protection</option>
+            <option>VIP Security</option>
+            <option>Protocol Management</option>
+            <option>Security Consulting</option>
+            <option>Event Cover (mixed)</option>
+            <option>Other / Not sure</option>
+          </select>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <input name="date" type="date" class="rounded-md px-4 py-3 text-sm w-full">
+            <input name="location" placeholder="Location(s)" class="rounded-md px-4 py-3 text-sm w-full">
+          </div>
+          <textarea name="details" rows="3" placeholder="Principals, venues, concerns…" class="rounded-md px-4 py-3 text-sm w-full"></textarea>
+          <button class="w-full bg-[#25D366] text-white font-bold text-sm py-3 rounded-md hover:brightness-95 transition">Send via WhatsApp</button>
+          <p class="text-[11px] text-muted text-center">Opens WhatsApp with your brief addressed to TeamSamson. Confidential — no payment taken here.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const WA_NUMBER = "2348055223392";
+const waLink = (m) => "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(m);
+
+const services = [
+  { id:1, icon:"◈", title:"Close Protection",
+    teaser:"One-to-one executive protection — plain-clothes or low-profile detail for principals on the move.",
+    body:"A dedicated Close Protection Officer (CPO) stays on the principal from pickup to safe dismissal: advance route checks, arrival and exit choreography, crowd buffers, and 24-hour comms with command. Ideal for executives, clergy, public figures, families and anyone under unwanted attention.",
+    included:["Dedicated CPO / 2-man detail options","Advance route & venue recce","Airport pickup, convoy & escort driving","Residential & hotel-floor checks","Daily movement log & debrief"],
+    best:"Executives, clergy, dignitaries, families, witnesses, persons under threat." },
+  { id:2, icon:"⬢", title:"VIP Security",
+    teaser:"Visible, disciplined security for VIPs, venues and events — gates, crowds and backstage handled.",
+    body:"Uniformed or suited teams for access control, perimeter, VVIP holding areas, stage/pulpit cover and crowd management. From 2 officers for a private dinner to 20+ for crusades, concerts and camp meetings. Command-led, radio-coordinated, incident-logged.",
+    included:["Access control & accreditation support","Crowd control & anti-disruption teams","VVIP holding / green-room cover","Stage, pulpit & altar-call protection","Radio comms, supervisor & incident log"],
+    best:"Events, churches, weddings, launches, concerts, estates needing steady cover." },
+  { id:3, icon:"✦", title:"Protocol Management",
+    teaser:"Arrivals, seating, escort order and guest handling — your guests feel honoured, your programme stays on time.",
+    body:"We run the order of proceedings around people, not just paper: airport reception, motorcade order, usher liaison, seating of dignitaries, award presentations, clergy courtesies and departure sequence. The audience sees grace; behind it is a timed plan.",
+    included:["Arrival / departure choreography","Order of precedence & seating plan","Airport meet-and-greet & motorcade","Liaison with ushers, media & security","Guest-list & holding-room management"],
+    best:"Government, corporate, church and family events hosting dignitaries." },
+  { id:4, icon:"◎", title:"Security Consulting",
+    teaser:"Risk assessments, SOPs and training — know your exposure before an incident teaches you.",
+    body:"Walk-through audits for homes, estates, schools, churches and offices: threat grading, guard-force review, CCTV/access recommendations, emergency & evacuation plans, and staff briefings. You get a written report with prioritised, costed actions — not fear.",
+    included:["Threat & vulnerability assessment","Guard-force audit & SOP drafting","CCTV, access & perimeter advice","Emergency / evacuation planning","Staff & usher security briefing"],
+    best:"Organisations, estates, schools, ministries and families planning ahead." }
+];
+
+const faqs = [
+  ["How fast can you deploy?","Within Redemption City / Mowe and Lagos, same-day deployment is often possible for small details. Larger event teams need 48–72 hours. Message us the date first — dates are held on confirmation."],
+  ["Are your operatives armed?","We deploy to Nigerian law: licensed approach, emphasis on prevention, de-escalation, route and crowd discipline. Where armed cover is lawful and required, it is arranged through proper channels and stated in writing."],
+  ["Plain-clothes or uniformed?","Your choice. Close protection is typically plain-clothes/low-profile. Events and gates are uniformed or suited for deterrence. Mixed details are common."],
+  ["How is pricing calculated?","Team size × days × risk/location. A single CPO day costs far less than a full event detail. Send the brief and we return a clear quote — no hidden extras."],
+  ["Do you sign NDAs?","Yes. Confidentiality is default; formal NDAs and image restrictions (no photos of principals) are available on request."],
+  ["Where do you operate?","Base: Profound Groups Complex, Redemption City, Mowe, Ogun State. We cover Lagos, Ogun, Oyo, Abuja and nationwide deployments, including airport reception at LOS."]
+];
+
+function renderServices(){
+  document.getElementById('services-grid').innerHTML = services.map(s => `
+    <button onclick="openService(${s.id})" class="text-left bg-surface border hairline hover:border-gold/60 rounded-lg p-6 transition flex flex-col justify-between">
+      <div>
+        <div class="w-12 h-12 rounded-md bg-ink border hairline flex items-center justify-center text-gold text-xl mb-4">${s.icon}</div>
+        <h3 class="font-display text-2xl mb-2">${s.title}</h3>
+        <p class="text-sm text-paper/60 mb-5 leading-relaxed">${s.teaser}</p>
+      </div>
+      <span class="text-sm text-goldsoft font-bold">See details →</span>
+    </button>`).join('');
+}
+function openService(id){
+  const s = services.find(x=>x.id===id);
+  document.getElementById('service-modal-title').textContent = s.title;
+  document.getElementById('service-modal-body').innerHTML = `
+    <p class="text-paper/70 text-sm leading-relaxed mb-4">${s.body}</p>
+    <p class="text-[11px] uppercase tracking-[.18em] text-muted mb-2">What's included</p>
+    <ul class="space-y-2 mb-4">${s.included.map(i=>`<li class="flex gap-2 text-sm border hairline rounded-md px-3 py-2.5 bg-ink"><span class="tick">✓</span><span>${i}</span></li>`).join('')}</ul>
+    <div class="border border-gold/30 bg-gold/10 rounded-md p-3 text-xs text-paper/80 mb-4"><strong>Best for:</strong> ${s.best}</div>
+    <div class="flex flex-col sm:flex-row gap-2">
+      <a href="${waLink('Hello TeamSamson! I need "'+s.title+'" — please assess me.')}" target="_blank" rel="noopener" class="flex-1 text-center bg-[#25D366] text-white font-bold text-sm px-5 py-3 rounded-md">Ask on WhatsApp</a>
+      <button onclick="closeModal('service-modal');presetQuote('${s.title}')" class="flex-1 text-sm font-semibold px-5 py-3 rounded-md border hairline hover:border-gold transition">Request this service →</button>
+    </div>`;
+  openModal('service-modal');
+}
+function presetQuote(title){
+  const sel = document.getElementById('quote-service');
+  if(sel){ [...sel.options].forEach(o=>{ if(o.text===title) sel.value=o.value||o.text; }); if([...sel.options].some(o=>o.text===title)) sel.selectedIndex=[...sel.options].findIndex(o=>o.text===title); }
+  openModal('quote-modal');
+}
+function renderFaq(){
+  document.getElementById('faq-list').innerHTML = faqs.map(([q,a],i)=>`
+    <div class="accordion-item ${i===0?'open':''}">
+      <button class="accordion-q" onclick="this.parentElement.classList.toggle('open')"><span>${q}</span><span class="acc-icon">+</span></button>
+      <div class="accordion-a"><p class="px-4 pb-4 text-sm text-paper/65 leading-relaxed">${a}</p></div>
+    </div>`).join('');
+}
+function submitBrief(e){
+  e.preventDefault();
+  const f = e.target, d = new FormData(f);
+  const msg = "Hello TeamSamson! Protection brief from website:\n\n*PROTECTION BRIEF*\nName: "+d.get('name')+"\nPhone: "+d.get('phone')+"\nService: "+(d.get('service')||'Not specified')+"\nDate: "+(d.get('date')||'Flexible')+"\nLocation: "+(d.get('location')||'Not specified')+"\n\nDetails:\n"+(d.get('details')||'None given')+"\n\nPlease reply with assessment and quote.";
+  window.open(waLink(msg), "_blank");
+}
+function openModal(id){ const m=document.getElementById(id); if(!m)return; m.classList.remove('hidden'); m.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+function closeModal(id){ const m=document.getElementById(id); if(!m)return; m.classList.add('hidden'); m.setAttribute('aria-hidden','true'); if(!document.querySelector('.modal:not(.hidden)')) document.body.style.overflow=''; }
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderServices(); renderFaq();
+  document.getElementById('footer-year').textContent = '© ' + new Date().getFullYear() + ' TeamSamson. All rights reserved.';
+  const boxes = document.querySelectorAll('#threat-check input');
+  const result = document.getElementById('threat-result');
+  boxes.forEach(b=>b.addEventListener('change', ()=>{
+    const n=[...boxes].filter(x=>x.checked).length;
+    if(!n){ result.classList.add('hidden'); return; }
+    result.classList.remove('hidden');
+    result.innerHTML = n===1 ? "<strong>Recommendation:</strong> a light detail or protocol officer likely covers it — message us for confirmation."
+      : n===2 ? "<strong>Recommendation:</strong> you likely need a 2-man detail + advance check. Tap below to get assessed."
+      : "<strong>Recommendation:</strong> you likely need a full detail. Contact us today — treat as priority.";
+  }));
+  document.addEventListener('keydown', e=>{
+    if(e.key==='Escape') document.querySelectorAll('.modal:not(.hidden)').forEach(m=>closeModal(m.id));
+  });
+});
+</script>
+</body>
+</html>
