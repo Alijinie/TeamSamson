@@ -2,495 +2,1346 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>TeamSamson — Close Protection, VIP Security, Protocol & Consulting | Mowe, Ogun State</title>
 <meta name="description" content="TeamSamson provides close protection, VIP security, protocol management and security consulting from Profound Groups Complex, Redemption City, Mowe, Ogun State. Discreet, vetted, 24/7 operatives for executives, VIPs, events and organisations.">
 <meta name="theme-color" content="#0a0e13">
+<meta name="color-scheme" content="dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="TeamSamson">
 <meta property="og:title" content="TeamSamson — Close Protection & VIP Security">
 <meta property="og:description" content="TeamSamson provides close protection, VIP security, protocol management and security consulting from Profound Groups Complex, Redemption City, Mowe, Ogun State. Discreet, vetted, 24/7 operatives for executives, VIPs, events and organisations.">
 <meta property="og:type" content="website">
-  <meta property="og:image" content="https://alijinie.github.io/TeamSamson/123.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="TeamSamson Logo">
-    <meta property="og:site_name" content="Team Samson VIP Protection">
-    <meta property="og:locale" content="en_NG">
+<meta property="og:image" content="https://alijinie.github.io/TeamSamson/123.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TeamSamson Logo">
+<meta property="og:site_name" content="Team Samson VIP Protection">
+<meta property="og:locale" content="en_NG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://alijinie.github.io/">
+<meta name="twitter:title" content="TeamSamson | Official Website">
+<meta name="twitter:description" content="TeamSamson provides close protection, VIP security, protocol management and security consulting from Profound Groups Complex, Redemption City, Mowe, Ogun State. Discreet, vetted, 24/7 operatives for executives, VIPs, events and organisations.">
+<meta name="twitter:image" content="https://alijinie.github.io/TeamSamson/123.jpg">
+<meta name="twitter:image:alt" content="TeamSamson Logo">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://alijinie.github.io/">
-    <meta name="twitter:title" content="TeamSamson | Official Website">
-    <meta name="twitter:description" content="TeamSamson provides close protection, VIP security, protocol management and security consulting from Profound Groups Complex, Redemption City, Mowe, Ogun State. Discreet, vetted, 24/7 operatives for executives, VIPs, events and organisations.">
-    <meta name="twitter:image" content="https:/alijinie.github.io/TeamSamson/123.jpg">
-    <meta name="twitter:image:alt" content="TeamSamson Logo">
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"TeamSamson","description":"Close protection, VIP security, protocol management and security consulting.","email":"profoundhospitalities@gmail.com","telephone":"+2348055223392","address":{"@type":"PostalAddress","streetAddress":"Profound Groups Complex, Redemption City","addressLocality":"Mowe","addressRegion":"Ogun State","addressCountry":"NG"},"areaServed":["Lagos","Ogun","Oyo","Abuja","Nigeria"]}
+</script>
+
+<!-- ============================================================================
+     EASY EDIT ZONE  (contact details + images)
+     ----------------------------------------------------------------------------
+     IMAGES
+       1. Create a folder called  images  next to this index.html
+       2. Drop photos in it using the exact file names the placeholders show
+          (each placeholder prints its own file name, e.g. images/service-close-protection.jpg)
+       3. Refresh. Missing photos fall back to a placeholder automatically.
+     Naming pattern:
+       hero-home.jpg                      home hero background   (1600x1000)
+       quote-banner.jpg                   banner in the request form (1200x375)
+       logo.png                           square logo (replaces the "S" mark)
+       service-<slug>.jpg                 card photo, also used inside the modal (800x600)
+       service-<slug>-hero.jpg            OPTIONAL wider modal photo (1280x720)
+       service-<slug>-g1.jpg .. -g3.jpg   modal gallery photos (800x600)
+       sector-<slug>.jpg, deployment-<slug>.jpg, region-<slug>.jpg, step-<slug>.jpg
+                                          card photo, also used inside the modal (800x600)
+       ...each of those also accepts an optional  -hero.jpg  (1280x720)
+     To use a photo hosted elsewhere, add it to IMAGE_OVERRIDES below.
+     When you are ready to go live, set placeholderMode to false: missing photos
+     then show a clean branded tile with no text, and empty galleries hide.
+     ============================================================================ -->
 <script>
-tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: {
-        display: ['Oswald','Arial Narrow','sans-serif'],
-        body: ['Inter','system-ui','sans-serif']
-      },
-      colors: {
-        ink: '#0a0e13',
-        surface: '#111823',
-        surface2: '#182231',
-        hair: '#2a3648',
-        gold: '#c8a84b',
-        goldsoft: '#e6cd8a',
-        paper: '#eef1f5',
-        muted: '#93a0b4'
-      }
+const CONFIG = {
+  waNumber: "2348055223392",
+  phoneTel: "+2348055223392",
+  phoneDisplay: "+234 805 522 3392",
+  email: "profoundhospitalities@gmail.com",
+  address: "Profound Groups Complex, Redemption City, Mowe, Ogun State",
+  imageDir: "images/",
+  imageExt: ".jpg",
+  placeholderMode: true
+};
+const IMAGE_OVERRIDES = {
+  // "service-close-protection": "https://your-host.com/photos/cpo.jpg",
+};
+
+/* ---- image helpers (kept in <head> so images can report errors before the app script runs) ---- */
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const imgSrc = key => IMAGE_OVERRIDES[key] || (CONFIG.imageDir + key + CONFIG.imageExt);
+const ICON_IMG = '<rect x="3.5" y="5" width="17" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m4.5 17.5 5-4.5 3.5 3 2.5-2 4 3.5"/>';
+const ICON_SHIELD = '<path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.2 7.5 9.5 4.4-1.3 7.5-4.9 7.5-9.5V6L12 3Z"/>';
+
+function placeholderURI(label, hint, w, h, pos){
+  const live = CONFIG.placeholderMode, corner = pos === 'corner', grid = Math.round(w / 16);
+  const size2 = hint + '  ·  ' + w + '×' + h;
+  const fit = (t, max) => Math.min(max, (w * 0.86) / (Math.max(t.length, 1) * 0.56));
+  const f1 = fit(label, w * 0.056), f2 = fit(size2, w * 0.036), ic = w * 0.1;
+  let inner = '';
+  if (!corner) {
+    inner += '<g transform="translate(' + (w/2 - ic/2) + ' ' + (h/2 - ic*1.15) + ') scale(' + (ic/24) + ')" fill="none" stroke="#c8a84b" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".9">' + (live ? ICON_IMG : ICON_SHIELD) + '</g>';
+  }
+  if (live) {
+    if (corner) {
+      inner += '<text x="' + (w - w*0.03) + '" y="' + (w*0.03 + f2) + '" text-anchor="end" font-family="Arial,sans-serif" font-size="' + f2 + '" fill="#e6cd8a">' + esc(label) + ' — ' + esc(size2) + '</text>';
+    } else {
+      const y1 = h/2 + ic*0.55;
+      inner += '<text x="' + (w/2) + '" y="' + y1 + '" text-anchor="middle" font-family="Arial,sans-serif" font-size="' + f1 + '" font-weight="700" fill="#eef1f5">' + esc(label) + '</text>';
+      inner += '<text x="' + (w/2) + '" y="' + (y1 + f1*1.5) + '" text-anchor="middle" font-family="Arial,sans-serif" font-size="' + f2 + '" fill="#e6cd8a">' + esc(size2) + '</text>';
     }
   }
+  const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + ' ' + h + '">'
+    + '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b2637"/><stop offset="1" stop-color="#0b1017"/></linearGradient>'
+    + '<pattern id="p" width="' + grid + '" height="' + grid + '" patternUnits="userSpaceOnUse"><path d="M' + grid + ' 0H0V' + grid + '" fill="none" stroke="#c8a84b" stroke-opacity=".10"/></pattern></defs>'
+    + '<rect width="100%" height="100%" fill="url(#g)"/><rect width="100%" height="100%" fill="url(#p)"/>' + inner + '</svg>';
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+}
+
+function imgTag({keys, w, h, label = '', alt = '', eager = false, pos = ''}){
+  const src = keys.map(imgSrc);
+  return '<img src="' + esc(src[0]) + '" data-fb="' + esc(src.slice(1).join('|')) + '" data-key="' + esc(keys[0]) + '" data-label="' + esc(label || alt) + '" data-w="' + w + '" data-h="' + h + '" data-pos="' + pos + '" width="' + w + '" height="' + h + '" alt="' + esc(alt) + '" ' + (eager ? 'fetchpriority="high"' : 'loading="lazy"') + ' decoding="async" onerror="imgFail(this)">';
+}
+
+function imgFail(img){
+  const rest = (img.dataset.fb || '').split('|').filter(Boolean);
+  if (rest.length) { img.dataset.fb = rest.slice(1).join('|'); img.src = rest[0]; return; }
+  img.onerror = null; img.removeAttribute('onerror');
+  const opt = img.closest('[data-optional]');
+  if (opt && !CONFIG.placeholderMode) {
+    const g = opt.parentElement; opt.remove();
+    if (g && !g.children.length) { const box = g.closest('.gallery-wrap'); if (box) box.remove(); }
+    return;
+  }
+  img.classList.add('is-ph');
+  img.src = placeholderURI(img.dataset.label || '', CONFIG.imageDir + img.dataset.key + CONFIG.imageExt, +img.dataset.w, +img.dataset.h, img.dataset.pos);
 }
 </script>
+
 <style>
-  :root{ --gold:#c8a84b; --bg:#0a0e13; }
-  body{ background:#0a0e13; color:#eef1f5; }
-  ::selection{ background:#c8a84b; color:#0a0e13; }
-  .hairline{ border-color:#2a3648; }
-  .btn-gold{ background:linear-gradient(100deg,#c8a84b,#e6cd8a); color:#0a0e13; }
-  .btn-gold:hover{ filter:brightness(1.07); }
-  .hero-grid{
-    background-image:linear-gradient(rgba(200,168,75,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(200,168,75,.07) 1px,transparent 1px);
-    background-size:44px 44px;
-    mask-image:radial-gradient(ellipse at 60% 40%, black 40%, transparent 75%);
-  }
-  .shield-glow{ background:radial-gradient(circle at 70% 30%, rgba(200,168,75,.18), transparent 55%), radial-gradient(circle at 20% 80%, rgba(38,92,160,.25), transparent 55%); }
-  .tick{ color:#c8a84b; font-weight:700; }
-  .tab-btn{ font-size:.8rem; font-weight:700; padding:.55rem .95rem; border-radius:999px; border:1px solid #2a3648; color:#93a0b4; white-space:nowrap; transition:.2s; }
-  .tab-btn.active{ background:#c8a84b; border-color:#c8a84b; color:#0a0e13; }
-  .accordion-item{ border:1px solid #2a3648; border-radius:.6rem; background:#111823; overflow:hidden; }
-  .accordion-q{ width:100%; text-align:left; padding:.9rem 1rem; font-weight:600; font-size:.9rem; display:flex; justify-content:space-between; gap:1rem; align-items:center; }
-  .accordion-a{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
-  .accordion-item.open .accordion-a{ max-height:320px; }
-  .accordion-item.open .acc-icon{ transform:rotate(45deg); }
-  .acc-icon{ transition:.25s; color:#c8a84b; font-size:1.2rem; line-height:1; }
-  input,select,textarea{ background:#182231; border:1px solid #2a3648; color:#eef1f5; }
-  input::placeholder,textarea::placeholder{ color:#93a0b4; }
-  select option{ background:#182231; }
-  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{ outline:2px solid #c8a84b; outline-offset:2px; }
-  .modal[aria-hidden="true"]{ display:none; }
-  .modal-panel{ animation:pop .28s ease both; max-height:calc(100vh - 3rem); display:flex; flex-direction:column; overflow:hidden; }
-  @keyframes pop{ from{opacity:0; transform:translateY(12px) scale(.98);} to{opacity:1; transform:none;} }
-  .modal-scroll{ overflow-y:auto; scrollbar-width:thin; }
-  html{ scroll-behavior:smooth; }
+/* =====================================================================
+   TOKENS
+   ===================================================================== */
+:root{
+  --ink:#0a0e13; --surface:#111823; --surface-2:#182231; --hair:#2a3648;
+  --gold:#c8a84b; --gold-soft:#e6cd8a; --paper:#eef1f5; --muted:#93a0b4; --wa:#25d366;
+  --gutter:clamp(16px,4.6vw,40px);
+  --safe-t:env(safe-area-inset-top,0px); --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-l:env(safe-area-inset-left,0px); --safe-r:env(safe-area-inset-right,0px);
+  --dock-space:calc(66px + 28px + var(--safe-b));
+  --r-s:10px; --r-m:16px; --r-l:24px;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scrollbar-gutter:stable;background:var(--ink)}
+html.lock{overflow:hidden}
+body{
+  margin:0;min-height:100vh;min-height:100dvh;
+  font:400 1rem/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color:var(--paper);background:var(--ink);overflow-x:clip;
+  -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;touch-action:manipulation;
+}
+::selection{background:var(--gold);color:var(--ink)}
+img,svg,iframe{max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0;padding:0;text-align:inherit}
+h1,h2,h3{font-family:Oswald,"Arial Narrow",sans-serif;font-weight:500;line-height:1.08;margin:0;letter-spacing:.005em}
+p{margin:0}
+ul,ol{margin:0;padding:0}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+[tabindex="-1"]:focus{outline:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ic{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.skip{position:fixed;left:12px;top:-64px;z-index:300;background:var(--gold);color:var(--ink);padding:10px 14px;border-radius:10px;font-weight:600}
+.skip:focus{top:calc(12px + var(--safe-t))}
+.gold{color:var(--gold)}
+
+/* =====================================================================
+   LAYOUT HELPERS
+   ===================================================================== */
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-left:max(var(--gutter),var(--safe-l));padding-right:max(var(--gutter),var(--safe-r))}
+.section{padding-block:clamp(22px,5vw,60px)}
+.h2{font-size:clamp(1.65rem,5.2vw,2.5rem);margin-bottom:8px}
+.h3{font-size:clamp(1.3rem,3.6vw,1.6rem);margin-bottom:12px}
+.sub{color:var(--muted);max-width:62ch;margin-bottom:clamp(16px,3vw,26px)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:6px 16px;margin-bottom:clamp(16px,3vw,26px)}
+.sec-head .h2,.sec-head .sub{margin-bottom:0}
+.link{display:inline-flex;align-items:center;gap:4px;color:var(--gold-soft);font-weight:600;font-size:.92rem;min-height:44px}
+.fine{font-size:.78rem;color:var(--muted)}
+.panel{background:var(--surface);border:1px solid var(--hair);border-radius:var(--r-l);padding:clamp(18px,4vw,28px)}
+.grid-auto{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.grid-ov{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.grid-reg{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,132px),1fr))}
+.two-col{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px}
+
+/* =====================================================================
+   BUTTONS
+   ===================================================================== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border-radius:14px;border:1px solid transparent;font-weight:600;font-size:.95rem;line-height:1.2;text-align:center;transition:filter .2s,border-color .2s,background .2s}
+.btn-gold{background:linear-gradient(100deg,var(--gold),var(--gold-soft));color:var(--ink)}
+.btn-gold:hover{filter:brightness(1.07)}
+.btn-wa{background:var(--wa);color:#04210f}
+.btn-wa:hover{filter:brightness(.95)}
+.btn-ghost{border-color:var(--hair);background:rgba(255,255,255,.02)}
+.btn-ghost:hover{border-color:var(--gold)}
+.btn-sm{min-height:40px;padding:0 14px;font-size:.85rem;border-radius:12px}
+.btn-block{width:100%}
+.icon-btn{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;flex:none}
+
+/* =====================================================================
+   INFO BAR + APP BAR (top)
+   ===================================================================== */
+.infobar{display:none;background:var(--surface);border-bottom:1px solid var(--hair);font-size:.78rem;color:rgba(238,241,245,.7)}
+.infobar-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 20px;padding-block:8px}
+.infobar-in p,.infobar-links{display:flex;align-items:center;gap:8px}
+.infobar-links{gap:20px}
+.infobar a:hover{color:var(--gold-soft)}
+.appbar{position:sticky;top:0;z-index:50;background:rgba(10,14,19,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--hair);padding-top:var(--safe-t)}
+.appbar-in{display:flex;align-items:center;gap:10px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.mark{position:relative;width:40px;height:40px;flex:none;border-radius:10px;background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:var(--ink);display:grid;place-items:center;font:700 1.35rem/1 Oswald,sans-serif;overflow:hidden}
+.mark img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.mark.has-logo{background:var(--surface-2)}
+.brand-name{font:600 1.3rem/1 Oswald,sans-serif;letter-spacing:.04em;white-space:nowrap}
+.brand-name b{color:var(--gold);font-weight:600}
+.brand-tag{display:none;font-size:.72rem;color:var(--muted);margin-top:3px;white-space:nowrap}
+.tabs{display:none;margin-left:auto;gap:4px}
+.tabs a{padding:10px 16px;border-radius:999px;font-size:.92rem;font-weight:500;color:rgba(238,241,245,.72);transition:color .2s,background .2s}
+.tabs a:hover{color:var(--paper)}
+.tabs a[aria-current="page"]{color:var(--ink);font-weight:600;background:linear-gradient(100deg,var(--gold),var(--gold-soft))}
+.appbar-actions{display:flex;align-items:center;gap:8px;margin-left:auto}
+.icon-btn.wa{background:var(--wa);color:#04210f}
+
+/* =====================================================================
+   FLOATING DOCK (mobile / tablet)
+   ===================================================================== */
+.dock{
+  position:fixed;z-index:60;left:50%;transform:translateX(-50%);
+  bottom:calc(12px + var(--safe-b));width:min(calc(100% - 24px),480px);height:66px;padding:6px;
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;
+  background:rgba(17,24,35,.88);-webkit-backdrop-filter:blur(18px) saturate(1.4);backdrop-filter:blur(18px) saturate(1.4);
+  border:1px solid rgba(200,168,75,.25);border-radius:24px;box-shadow:0 14px 34px rgba(0,0,0,.55);
+}
+.dock-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:0;border-radius:18px;color:var(--muted);font-size:clamp(.66rem,2.5vw,.74rem);font-weight:600;line-height:1.1;transition:background .2s,color .2s}
+.dock-item .ic{width:22px;height:22px}
+.dock-item span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dock-item:active{background:rgba(255,255,255,.06)}
+.dock-item[aria-current="page"]{color:var(--ink);background:linear-gradient(100deg,var(--gold),var(--gold-soft))}
+html.kbd .dock{display:none}
+
+/* =====================================================================
+   PAGES (tabs)
+   ===================================================================== */
+.page{display:block}
+.page[hidden]{display:none}
+.page.enter{animation:pageIn .26s var(--ease) both}
+@keyframes pageIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.page-head{padding-top:clamp(22px,5vw,52px);padding-bottom:4px}
+.page-head h1{font-size:clamp(2rem,7.2vw,3.6rem);font-weight:600;margin-bottom:12px;max-width:20ch}
+.page-head p{color:rgba(238,241,245,.7);max-width:60ch;font-size:clamp(1rem,2.4vw,1.1rem)}
+
+/* ---- HERO ---- */
+.hero{position:relative;isolation:isolate;overflow:hidden;border-bottom:1px solid var(--hair)}
+.hero-media{position:absolute;inset:0;z-index:-3}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(10,14,19,.66) 0%,rgba(10,14,19,.86) 55%,var(--ink) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(200,168,75,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(200,168,75,.07) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 60% 30%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse at 60% 30%,#000 30%,transparent 75%)}
+.hero-grid{display:grid;gap:24px;padding-block:clamp(26px,7vw,88px)}
+.status{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid rgba(200,168,75,.4);background:rgba(200,168,75,.1);color:var(--gold-soft);border-radius:999px;font-size:.8rem;font-weight:600;line-height:1.3}
+.pulse{width:8px;height:8px;flex:none;border-radius:50%;background:#4ade80;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-size:clamp(2.5rem,10.5vw,5.4rem);font-weight:600;line-height:.95;text-transform:uppercase;margin:16px 0}
+.hero h1 .gold{display:block}
+.lead{font-size:clamp(1rem,2.6vw,1.15rem);color:rgba(238,241,245,.78);max-width:56ch}
+.lead strong{color:var(--paper);font-weight:600}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.hero-cta .btn{flex:1 1 180px}
+.chips{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;margin-top:20px;font-size:.85rem;color:rgba(238,241,245,.72)}
+.chips li{display:flex;align-items:center;gap:6px}
+.chips .ic{color:var(--gold);width:1.1em;height:1.1em}
+
+.glass{background:rgba(17,24,35,.84);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid var(--hair);border-radius:var(--r-l);padding:clamp(18px,4vw,28px)}
+.glass .fine.top{color:var(--gold-soft);font-weight:600;font-size:.82rem}
+.glass h2{font-size:1.6rem;margin:2px 0 14px}
+.opts{display:grid;gap:8px}
+.opt{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;border:1px solid var(--hair);border-radius:12px;cursor:pointer;font-size:.92rem;line-height:1.45;transition:border-color .2s,background .2s}
+.opt input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--gold);flex:none}
+.opt.on{border-color:rgba(200,168,75,.7);background:rgba(200,168,75,.08)}
+.result{margin-top:12px;border:1px solid rgba(200,168,75,.4);background:rgba(200,168,75,.1);border-radius:12px;padding:12px 14px;font-size:.92rem}
+.result[hidden]{display:none}
+.glass .btn{margin-top:14px}
+.glass .fine{text-align:center;margin-top:8px}
+
+/* ---- CARDS ---- */
+.ph{position:relative;overflow:hidden;background:var(--surface-2)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.card{position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--hair);border-radius:var(--r-m);overflow:hidden;transition:border-color .2s}
+.card:hover,.card:focus-within{border-color:rgba(200,168,75,.6)}
+.badge{position:absolute;left:12px;bottom:12px;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:rgba(10,14,19,.82);border:1px solid rgba(200,168,75,.4);color:var(--gold);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.card-body{display:flex;flex-direction:column;gap:8px;padding:16px 18px 18px;flex:1}
+.card-body h3{font-size:1.45rem}
+.card-body p{color:rgba(238,241,245,.68);font-size:.92rem}
+.mini{list-style:none;display:grid;gap:6px;margin-top:2px;font-size:.86rem;color:rgba(238,241,245,.8)}
+.mini li{display:flex;gap:8px;align-items:flex-start}
+.mini .ic{color:var(--gold);margin-top:.2em;width:1.05em;height:1.05em}
+.card-cta{margin-top:auto;padding-top:8px;display:inline-flex;align-items:center;gap:4px;color:var(--gold-soft);font-weight:600;font-size:.9rem;min-height:44px}
+.stretch::after{content:"";position:absolute;inset:0;z-index:1}
+
+.scroller{display:grid;grid-auto-flow:column;grid-auto-columns:min(80%,310px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none;margin-inline:calc(var(--gutter) * -1);padding:2px var(--gutter) 6px;scroll-padding-inline:var(--gutter)}
+.scroller::-webkit-scrollbar{display:none}
+.scroller>*{scroll-snap-align:start}
+@media(min-width:720px){.scroller{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:repeat(2,1fr);overflow:visible;margin-inline:0;padding:0}}
+@media(min-width:1100px){.scroller{grid-template-columns:repeat(4,1fr)}}
+
+.ocard{position:relative;border-radius:var(--r-m);overflow:hidden;border:1px solid var(--hair);isolation:isolate;transition:border-color .2s}
+.ocard:hover,.ocard:focus-within{border-color:rgba(200,168,75,.6)}
+.ocard-txt{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:flex-end;justify-content:space-between;gap:10px;padding:44px 14px 12px 16px;background:linear-gradient(180deg,transparent,rgba(6,9,13,.94))}
+.ocard-txt h3{font-size:1.25rem;line-height:1.1}
+.ocard-txt p{margin-top:3px;font-size:.82rem;color:rgba(238,241,245,.78)}
+.grid-reg .ocard-txt{padding:36px 10px 10px 12px}
+.grid-reg .ocard-txt h3{font-size:1.02rem}
+.grid-reg .go{width:30px;height:30px}
+.go{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:rgba(10,14,19,.72);border:1px solid rgba(200,168,75,.5);color:var(--gold)}
+.go .ic{width:1em;height:1em}
+
+.rows{display:grid;gap:10px}
+.row{position:relative;display:flex;align-items:center;gap:14px;padding:10px 14px 10px 10px;background:var(--surface);border:1px solid var(--hair);border-radius:var(--r-m);transition:border-color .2s}
+.row:hover,.row:focus-within{border-color:rgba(200,168,75,.6)}
+.row .ph{width:clamp(88px,26vw,128px);flex:none;border-radius:10px}
+.row h3{font-size:1.2rem}
+.row p{margin-top:2px;font-size:.85rem;color:var(--muted)}
+.row .go{margin-left:auto}
+@media(min-width:900px){.rows{grid-template-columns:repeat(2,1fr)}}
+
+/* ---- WHY / TILES ---- */
+.why{display:grid;gap:24px;grid-template-columns:1fr}
+.why p.copy{color:rgba(238,241,245,.72);max-width:58ch;margin-top:12px}
+.tiles{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.tile{background:var(--surface);border:1px solid var(--hair);border-radius:var(--r-m);padding:16px 18px}
+.tile .ic{color:var(--gold);width:26px;height:26px;margin-bottom:10px}
+.tile h3{font-size:1.2rem;margin-bottom:4px}
+.tile p{font-size:.88rem;color:rgba(238,241,245,.66)}
+a.tile{display:block;transition:border-color .2s}
+a.tile:hover{border-color:rgba(200,168,75,.6)}
+@media(min-width:1024px){.why{grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}}
+.cta-band{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;background:linear-gradient(120deg,rgba(200,168,75,.16),rgba(200,168,75,.05));border:1px solid rgba(200,168,75,.4);border-radius:var(--r-l);padding:clamp(20px,4vw,32px)}
+.cta-band h2{font-size:clamp(1.4rem,4vw,1.9rem);margin-bottom:6px}
+.cta-band p{color:rgba(238,241,245,.75);max-width:52ch}
+
+/* ---- STEPS ---- */
+.steps{list-style:none;display:grid;gap:18px;position:relative}
+.step{display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;position:relative}
+.step:not(:last-child)::before{content:"";position:absolute;left:21px;top:48px;bottom:-18px;width:2px;background:linear-gradient(var(--gold),rgba(200,168,75,.15))}
+.step-num{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font:600 1.15rem/1 Oswald,sans-serif;background:var(--ink);border:2px solid var(--gold);color:var(--gold-soft)}
+.step .card-body{padding:14px 16px 12px}
+@media(min-width:900px){
+  .steps{grid-template-columns:repeat(4,1fr);gap:16px}
+  .step{grid-template-columns:1fr;gap:12px}
+  .step:not(:last-child)::before{left:52px;right:-16px;top:21px;bottom:auto;width:auto;height:2px;background:linear-gradient(90deg,var(--gold),rgba(200,168,75,.15))}
+  .step-num{position:relative;z-index:1}
+}
+
+/* ---- CHECKS / FACTS / CALLOUT (shared with modals) ---- */
+.checks{list-style:none;display:grid;gap:8px;margin-bottom:16px}
+.checks li{display:flex;gap:10px;padding:11px 12px;background:var(--ink);border:1px solid var(--hair);border-radius:12px;font-size:.92rem;line-height:1.45}
+.checks .ic{color:var(--gold);margin-top:.15em}
+.facts{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));margin:0 0 18px}
+.fact{background:var(--ink);border:1px solid var(--hair);border-radius:12px;padding:10px 12px}
+.fact dt{font-size:.75rem;color:var(--muted)}
+.fact dd{margin:2px 0 0;font-size:.9rem;font-weight:600;line-height:1.35}
+.callout{border:1px solid rgba(200,168,75,.3);background:rgba(200,168,75,.09);border-radius:12px;padding:12px 14px;font-size:.9rem;margin-bottom:6px}
+
+/* ---- COVERAGE ---- */
+.hq{display:grid;gap:16px;grid-template-columns:1fr}
+.hq p{color:rgba(238,241,245,.72);margin-bottom:16px}
+.map{position:relative;border-radius:var(--r-l);overflow:hidden;border:1px solid var(--hair);min-height:260px;background:var(--surface-2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(min-width:900px){.hq{grid-template-columns:1fr 1.2fr}.map{min-height:320px}}
+
+/* ---- CONTACT ---- */
+.contact-grid{display:grid;gap:18px;grid-template-columns:1fr}
+.contact-list{display:grid;gap:10px;align-content:start}
+.crow{display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--surface);border:1px solid var(--hair);border-radius:var(--r-m);transition:border-color .2s;min-height:68px}
+.crow:hover{border-color:rgba(200,168,75,.6)}
+.crow .ico{width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--ink);border:1px solid var(--hair);color:var(--gold)}
+.crow.wa .ico{color:var(--wa)}
+.crow b{display:block;font-size:.95rem}
+.crow small{display:block;color:var(--muted);font-size:.8rem;overflow-wrap:anywhere}
+.crow .go{margin-left:auto;background:none}
+@media(min-width:1024px){.contact-grid{grid-template-columns:1fr 1.2fr;gap:28px}}
+
+.form{display:grid;gap:12px}
+.f-row{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
+.f label{display:block;font-size:.8rem;font-weight:600;color:rgba(238,241,245,.8);margin-bottom:6px}
+.f input,.f select,.f textarea{width:100%;min-height:48px;padding:12px 14px;font-size:1rem;background:var(--surface-2);border:1px solid var(--hair);border-radius:12px;color:var(--paper);color-scheme:dark}
+.f textarea{min-height:96px;resize:vertical}
+.f input::placeholder,.f textarea::placeholder{color:var(--muted)}
+.f select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2393a0b4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:40px}
+.f select option{background:var(--surface-2)}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--gold);outline:none}
+.mail-alt{display:block;text-align:center;font-size:.85rem;color:var(--muted);padding:10px;overflow-wrap:anywhere}
+.mail-alt:hover{color:var(--paper)}
+
+/* ---- FAQ ---- */
+.faq{max-width:820px;margin-inline:auto}
+.search{position:relative;margin-bottom:12px}
+.search .ic{position:absolute;left:14px;top:50%;margin-top:-10px;color:var(--muted);width:20px;height:20px}
+.search input{width:100%;min-height:48px;padding:12px 14px 12px 44px;font-size:1rem;background:var(--surface-2);border:1px solid var(--hair);border-radius:999px;color-scheme:dark}
+.search input:focus{border-color:var(--gold);outline:none}
+.acc-list{display:grid;gap:8px}
+.acc{border:1px solid var(--hair);border-radius:14px;background:var(--surface);overflow:hidden}
+.acc h3{font-family:Inter,system-ui,sans-serif;font-weight:600;font-size:.95rem;line-height:1.4;letter-spacing:0}
+.acc-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:56px;padding:12px 16px}
+.acc-q .ic{color:var(--gold);transition:transform .25s}
+.acc.open .acc-q .ic{transform:rotate(45deg)}
+.acc-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .28s var(--ease)}
+.acc.open .acc-a{grid-template-rows:1fr}
+.acc-a>div{overflow:hidden;min-height:0}
+.acc-a p{padding:0 16px 16px;font-size:.92rem;color:rgba(238,241,245,.7)}
+.empty{text-align:center;padding:22px 12px;color:var(--muted)}
+.empty[hidden]{display:none}
+.empty a{color:var(--gold-soft);font-weight:600}
+
+/* ---- FOOTER / FAB / TOAST ---- */
+.footer{margin-top:clamp(20px,4vw,48px);border-top:1px solid var(--hair);padding-bottom:calc(var(--dock-space) + 8px)}
+.footer-in{display:flex;flex-direction:column;gap:20px;padding-block:32px}
+.footer .brand-name{font-size:1.2rem}
+.tagline{color:var(--gold-soft);font-style:italic;font-size:.92rem;margin-top:4px}
+.footer-links{display:grid;gap:4px;font-size:.9rem;color:rgba(238,241,245,.55)}
+.footer-links a:hover{color:var(--paper)}
+.footer-links a{overflow-wrap:anywhere}
+.fab{display:none;position:fixed;right:24px;bottom:24px;z-index:55;width:56px;height:56px;border-radius:50%;background:var(--wa);color:#04210f;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.5)}
+.fab .ic{width:28px;height:28px}
+.toast{position:fixed;left:50%;bottom:var(--dock-space);z-index:140;max-width:calc(100% - 32px);transform:translate(-50%,16px);opacity:0;pointer-events:none;background:var(--surface-2);border:1px solid rgba(200,168,75,.5);border-radius:14px;padding:12px 16px;font-size:.9rem;font-weight:500;text-align:center;box-shadow:0 12px 30px rgba(0,0,0,.5);transition:opacity .25s,transform .25s var(--ease)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* =====================================================================
+   SHEETS (modals: bottom sheet on phones, dialog on desktop)
+   ===================================================================== */
+.sheet{position:fixed;inset:0;z-index:100;display:none;align-items:flex-end;justify-content:center}
+.sheet.open{display:flex}
+.sheet-backdrop{position:absolute;inset:0;background:rgba(4,7,11,.76);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);touch-action:none;animation:fade .25s both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.sheet-panel{position:relative;width:100%;max-width:760px;max-height:94vh;max-height:94dvh;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--hair);border-bottom:0;border-radius:var(--r-l) var(--r-l) 0 0;overflow:hidden;outline:none;animation:rise .34s var(--ease) backwards}
+@keyframes rise{from{transform:translateY(48px);opacity:0}to{transform:none;opacity:1}}
+.sheet-scroll{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.sheet-grab{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:30px;z-index:2;touch-action:none;display:flex;justify-content:center;padding-top:8px;cursor:grab}
+.sheet-grab span{width:44px;height:5px;border-radius:3px;background:rgba(238,241,245,.6)}
+.sheet-close,.sheet-pager{position:absolute;top:18px;z-index:3;background:rgba(10,14,19,.74);border:1px solid rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.sheet-close{right:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center}
+.sheet-pager{left:14px;display:flex;align-items:center;gap:2px;padding:4px;border-radius:999px;font-size:.8rem;font-weight:600}
+.sheet-pager button{width:36px;height:36px;border-radius:50%;display:grid;place-items:center}
+.sheet-pager button:active{background:rgba(255,255,255,.1)}
+.sheet-pager span{padding:0 6px;white-space:nowrap}
+.sheet-foot{display:flex;flex-wrap:wrap;gap:10px;padding:12px clamp(18px,4vw,32px);padding-bottom:calc(12px + var(--safe-b));border-top:1px solid var(--hair);background:var(--surface-2)}
+.sheet-foot .btn{flex:1 1 150px}
+@media(min-width:768px){
+  .sheet{align-items:center;padding:24px}
+  .sheet-panel{border-bottom:1px solid var(--hair);border-radius:var(--r-l);max-height:min(90vh,880px);max-height:min(90dvh,880px)}
+  .sheet-grab{display:none}
+}
+.d-hero{aspect-ratio:16/9}
+.d-hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(10,14,19,.55),transparent 34%,transparent 58%,var(--surface))}
+.d-main{position:relative;padding:0 clamp(18px,4vw,32px) 24px;margin-top:-26px}
+.d-title{font-size:clamp(1.8rem,6vw,2.4rem);font-weight:600;margin-bottom:8px}
+.d-teaser{color:rgba(238,241,245,.78);margin-bottom:16px}
+.d-body{color:rgba(238,241,245,.68);font-size:.95rem;margin-bottom:18px}
+.d-h{font-size:1.2rem;margin-bottom:10px}
+.gallery-wrap{margin:4px 0 18px}
+.gallery{display:grid;grid-auto-flow:column;grid-auto-columns:min(70%,224px);gap:10px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:none;margin-inline:calc(-1 * clamp(18px,4vw,32px));padding:0 clamp(18px,4vw,32px) 4px}
+.gallery::-webkit-scrollbar{display:none}
+.g-item{display:block;scroll-snap-align:start}
+.g-item .ph{border-radius:12px;border:1px solid var(--hair)}
+.g-cap{display:block;font-size:.78rem;color:var(--muted);margin-top:6px}
+.q-banner{aspect-ratio:16/5}
+.q-banner::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(10,14,19,.5),transparent 45%,var(--surface))}
+.q-main{position:relative;padding:0 clamp(18px,4vw,32px) 24px;margin-top:-10px}
+.q-main h2{font-size:clamp(1.6rem,5vw,2rem);font-weight:600;margin-bottom:4px}
+.q-main>p{color:var(--muted);font-size:.9rem;margin-bottom:16px}
+
+.lightbox{z-index:120;align-items:center;justify-content:center}
+.lightbox .sheet-backdrop{background:rgba(0,0,0,.93)}
+.lb-fig{position:relative;margin:0;width:min(100%,1000px);padding:0 14px;text-align:center}
+.lb-fig img{display:block;max-width:100%;max-height:74vh;max-height:74dvh;margin:0 auto;border-radius:12px;background:var(--surface-2)}
+.lb-fig figcaption{margin-top:12px;font-size:.92rem}
+.lb-btn{position:absolute;z-index:3;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:rgba(17,24,35,.88);border:1px solid var(--hair)}
+.lb-close{top:calc(14px + var(--safe-t));right:14px}
+.lb-prev{left:10px;top:50%;margin-top:-24px}
+.lb-next{right:10px;top:50%;margin-top:-24px}
+
+/* =====================================================================
+   BREAKPOINTS
+   ===================================================================== */
+@media(min-width:560px){.footer-in{flex-direction:row;justify-content:space-between}.footer-links{text-align:right}}
+@media(min-width:1024px){
+  .infobar{display:block}
+  .appbar-in{height:72px}
+  .tabs{display:flex}
+  .brand-tag{display:block}
+  .appbar-actions{margin-left:16px}
+  .dock{display:none}
+  .fab{display:grid}
+  .footer{padding-bottom:16px}
+  .toast{bottom:32px}
+  .hero-grid{grid-template-columns:1.15fr .85fr;align-items:center;gap:56px}
+}
+@media(max-width:359px){
+  .icon-btn.wa{display:none}
+  .brand-name{font-size:1.15rem}
+  .btn{padding:0 14px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
 </style>
 </head>
-<body class="font-body antialiased" id="top">
 
-<!-- TOP BAR -->
-<div class="bg-surface border-b hairline text-xs">
-  <div class="max-w-6xl mx-auto px-5 md:px-8 py-2 flex flex-wrap items-center justify-between gap-2 text-paper/70">
-    <p class="flex items-center gap-2">
-      <span class="text-gold">◈</span>
-      <span>Profound Groups Complex, Redemption City, Mowe, Ogun State</span>
-    </p>
-    <div class="flex items-center gap-4">
-      <a href="mailto:profoundhospitalities@gmail.com" class="hover:text-goldsoft transition">profoundhospitalities@gmail.com</a>
-      <a href="https://wa.me/2348055223392" target="_blank" rel="noopener" class="hover:text-goldsoft transition font-semibold">+234 805 522 3392</a>
-    </div>
-  </div>
-</div>
+<body>
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9.5h5v-6h4v6h5V10"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.2 7.5 9.5 4.4-1.3 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m8.8 12 2.4 2.4 4-4.4"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19c.4-3 2.6-5 5.5-5s5.1 2 5.5 5"/><circle cx="17" cy="9.5" r="2.4"/><path d="M16.5 14.2c2.3.1 3.9 1.7 4.3 4.3"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9l-5.2 2.8 1-5.9-4.3-4.1 5.9-.8L12 3.5Z"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 4.5h6V7H9z"/><path d="M8.5 12h7M8.5 15.5h5"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6.5a3 3 0 0 0 0-6h-5a3 3 0 0 1 0-6H16"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.5-5.6 6.5-11a6.5 6.5 0 0 0-13 0c0 5.4 6.5 11 6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01" stroke-width="2.4"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.6L3.5 20.5l1.4-4.4A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M9 8.5c-.4.5-.6 1.2-.3 2 .8 2.1 2.7 3.9 4.8 4.7.8.3 1.5.1 2-.4l.4-.7-1.9-1.1-.8.7c-1.1-.4-2-1.3-2.5-2.4l.7-.8-1-1.9-.9.1Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m4 7.5 8 6 8-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l1.5 4-2 1.3a11 11 0 0 0 5.2 5.2L15 12.5l4 1.5v4a2 2 0 0 1-2 2A13 13 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4.5h5.5V10M19.5 4.5 11 13M18 14.5V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.5"/></symbol>
+  </defs>
+</svg>
 
-<!-- NAV -->
-<header class="sticky top-0 z-40 bg-ink/90 backdrop-blur-md border-b hairline">
-  <div class="max-w-6xl mx-auto px-5 md:px-8 h-[72px] flex items-center justify-between">
-    <a href="#top" class="flex items-center gap-3">
-      <span class="w-10 h-10 rounded-md bg-gradient-to-br from-gold to-goldsoft flex items-center justify-center font-display font-bold text-ink text-xl">S</span>
-      <span class="leading-none">
-        <span class="font-display text-xl tracking-wide block">TEAM<span class="text-gold">SAMSON</span></span>
-        <span class="text-[10px] uppercase tracking-[.2em] text-muted">Protection • Protocol • Consulting  • Management</span>
-      </span>
-    </a>
-    <nav class="hidden md:flex items-center gap-7 text-sm text-paper/70">
-      <a href="#services" class="hover:text-paper transition">Services</a>
-      <a href="#why" class="hover:text-paper transition">Why Us</a>
-      <a href="#protocol" class="hover:text-paper transition">Protocol</a>
-      <a href="#coverage" class="hover:text-paper transition">Coverage</a>
-      <a href="#faq" class="hover:text-paper transition">FAQ</a>
-      <a href="#contact" class="hover:text-paper transition">Contact</a>
-    </nav>
-    <div class="flex items-center gap-2">
-      <a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20protection%20%2F%20protocol%20support." target="_blank" rel="noopener" class="hidden sm:inline-flex text-sm border hairline hover:border-gold px-4 py-2 rounded-md transition">WhatsApp</a>
-      <button onclick="openModal('quote-modal')" class="btn-gold font-semibold text-[11px] md:text-sm px-3 py-1.5 md:px-4 md:py-2.5 rounded-md">Request Cover</button>
-      <button id="menu-btn" class="md:hidden border hairline rounded-md px-3 py-2 text-sm" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">☰</button>
-    </div>
-  </div>
-  <div id="mobile-menu" class="hidden md:hidden border-t hairline bg-surface px-5 py-4 space-y-3 text-sm">
-    <a href="#services" class="block">Services</a>
-    <a href="#why" class="block">Why Us</a>
-    <a href="#protocol" class="block">Protocol</a>
-    <a href="#coverage" class="block">Coverage</a>
-    <a href="#faq" class="block">FAQ</a>
-    <a href="#contact" class="block font-semibold text-gold">Contact / Request Cover →</a>
-  </div>
-</header>
+<a class="skip" href="#main">Skip to content</a>
 
-<main>
-<!-- HERO -->
-<section class="relative overflow-hidden border-b hairline">
-  <div class="absolute inset-0 hero-grid"></div>
-  <div class="absolute inset-0 shield-glow"></div>
-  <div class="relative max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24 grid lg:grid-cols-[1.2fr_.8fr] gap-12 items-center">
-    <div>
-      <p class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.18em] border border-gold/40 bg-gold/10 text-goldsoft rounded-full px-4 py-1.5 mb-5">
-        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Available 24/7 — Lagos • Ogun • Abuja • Nationwide
+<div id="shell">
+
+  <div class="infobar">
+    <div class="wrap infobar-in">
+      <p><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span>Profound Groups Complex, Redemption City, Mowe, Ogun State</span></p>
+      <p class="infobar-links">
+        <a href="mailto:profoundhospitalities@gmail.com">profoundhospitalities@gmail.com</a>
+        <a href="https://wa.me/2348055223392" target="_blank" rel="noopener"><strong>+234 805 522 3392</strong></a>
       </p>
-      <h1 class="font-display text-5xl md:text-7xl leading-[.95] mb-5">
-        DISCREET<br>PROTECTION.<br><span class="text-gold">TOTAL PROTOCOL.</span>
-      </h1>
-      <p class="text-paper/70 text-base md:text-lg max-w-xl leading-relaxed mb-8">
-        TeamSamson provides <strong class="text-paper">close protection, VIP security, protocol management and security consulting</strong> for executives, families, clergy, dignitaries, events and organisations. Vetted operatives. Quiet movement. Zero embarrassment.
-      </p>
-      <div class="flex flex-wrap gap-3 mb-8">
-        <button onclick="openModal('quote-modal')" class="btn-gold font-bold text-sm px-6 py-3.5 rounded-md">Request Protection Cover →</button>
-        <a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20urgent%20security%20cover." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold text-sm px-6 py-3.5 rounded-md hover:brightness-95 transition">
-          Chat on WhatsApp
-        </a>
-        <a href="mailto:profoundhospitalities@gmail.com" class="inline-flex items-center border hairline hover:border-gold text-sm font-semibold px-6 py-3.5 rounded-md transition">Email Us</a>
-      </div>
-      <div class="grid grid-cols-3 max-w-md gap-4 border-t hairline pt-6">
-        <div><p class="font-display text-2xl md:text-3xl text-gold">24/7</p><p class="text-xs text-muted">Rapid response & standby teams</p></div>
-        <div><p class="font-display text-2xl md:text-3xl text-gold">100%</p><p class="text-xs text-muted">Vetted, trained operatives</p></div>
-        <div><p class="font-display text-2xl md:text-3xl text-gold">4</p><p class="text-xs text-muted">Core disciplines, one command</p></div>
-      </div>
-    </div>
-    <div class="bg-surface border hairline rounded-xl p-6 md:p-7">
-      <p class="text-[11px] uppercase tracking-[.18em] text-goldsoft font-bold mb-1">Threat check — 60 seconds</p>
-      <h3 class="font-display text-2xl mb-4">Do you need cover?</h3>
-      <div class="space-y-2 text-sm" id="threat-check">
-        <label class="flex items-start gap-2 border hairline rounded-md p-3 cursor-pointer hover:border-gold transition"><input type="checkbox" class="mt-1 accent-[#c8a84b]"> <span>You are a public figure, executive, clergy or dignitary with visible movement</span></label>
-        <label class="flex items-start gap-2 border hairline rounded-md p-3 cursor-pointer hover:border-gold transition"><input type="checkbox" class="mt-1 accent-[#c8a84b]"> <span>You have an event, arrival, convoy, church programme or tour coming up</span></label>
-        <label class="flex items-start gap-2 border hairline rounded-md p-3 cursor-pointer hover:border-gold transition"><input type="checkbox" class="mt-1 accent-[#c8a84b]"> <span>You have received threats, unwanted attention, or crowd-control concerns</span></label>
-        <label class="flex items-start gap-2 border hairline rounded-md p-3 cursor-pointer hover:border-gold transition"><input type="checkbox" class="mt-1 accent-[#c8a84b]"> <span>You need airport pickup, escort, or guest / VIP protocol handling</span></label>
-      </div>
-      <p id="threat-result" class="hidden mt-3 text-sm border border-gold/40 bg-gold/10 rounded-md p-3"></p>
-      <button onclick="openModal('quote-modal')" class="w-full btn-gold font-bold text-sm mt-4 py-3 rounded-md">Get assessed on WhatsApp</button>
-      <p class="text-[11px] text-muted mt-2 text-center">No obligation. Assessment is confidential.</p>
     </div>
   </div>
-</section>
 
-<!-- TRUST STRIP -->
-<section class="border-b hairline bg-surface/50">
-  <div class="max-w-6xl mx-auto px-5 md:px-8 py-6 flex flex-wrap gap-x-8 gap-y-2 text-xs text-paper/60">
-    <span><span class="tick">✓</span> Background-checked operatives</span>
-    <span><span class="tick">✓</span> Confidentiality by default</span>
-    <span><span class="tick">✓</span> Uniformed or plain-clothes</span>
-    <span><span class="tick">✓</span> Events, churches, corporates, families</span>
-    <span><span class="tick">✓</span> Redemption City base, nationwide deployment</span>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24">
-  <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2">What we do</p>
-  <h2 class="font-display text-4xl md:text-5xl mb-3">Four disciplines. One standard: <span class="text-gold">no incidents.</span></h2>
-  <p class="text-paper/60 max-w-2xl mb-10">Tap any service for full details, what's included, and how to book. Every deployment starts with a confidential threat & route assessment.</p>
-  <div id="services-grid" class="grid sm:grid-cols-2 gap-4"></div>
-</section>
-
-<!-- WHY -->
-<section id="why" class="border-y hairline bg-surface/40">
-  <div class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24 grid lg:grid-cols-2 gap-12">
-    <div>
-      <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2">Why TeamSamson</p>
-      <h2 class="font-display text-4xl md:text-5xl mb-5">Security that respects your image.</h2>
-      <p class="text-paper/70 leading-relaxed mb-6">Anyone can stand at a gate. Our work is different: advance route checks, arrival choreography, crowd buffers, and operatives who know when to be visible — and when to disappear. Principals keep their dignity. Hosts keep their programme on time. Guests feel honoured, not harassed.</p>
-      <ul class="space-y-3 text-sm">
-        <li class="flex gap-3"><span class="tick">✓</span><span><strong>Advance work first:</strong> venue recce, route planning, hospital & exit mapping before boots hit ground.</span></li>
-        <li class="flex gap-3"><span class="tick">✓</span><span><strong>Protocol-grade manners:</strong> trained in arrivals, seating, escort order, clergy & cultural courtesies.</span></li>
-        <li class="flex gap-3"><span class="tick">✓</span><span><strong>Scalable teams:</strong> 1 close-protection officer to full detail — drivers, advance party, event marshals.</span></li>
-        <li class="flex gap-3"><span class="tick">✓</span><span><strong>Reports & debrief:</strong> incident log, photos where permitted, and recommendations after every job.</span></li>
-      </ul>
-    </div>
-    <div class="space-y-3">
-      <div class="bg-ink border hairline rounded-lg p-5"><p class="font-display text-lg mb-1">Executive & Family Cover</p><p class="text-sm text-paper/60">Daily detail, school runs, travel escort, residential checks. Plain-clothes where you want privacy.</p></div>
-      <div class="bg-ink border hairline rounded-lg p-5"><p class="font-display text-lg mb-1">Churches, Camps & Crusades</p><p class="text-sm text-paper/60">Pulpit protection, altar-call crowd control, minister's convoy, camp-meeting traffic & gate protocol — our home ground around Redemption City.</p></div>
-      <div class="bg-ink border hairline rounded-lg p-5"><p class="font-display text-lg mb-1">Corporate, Weddings & Events</p><p class="text-sm text-paper/60">Access control, backstage holding, VVIP arrival sequence, anti-disruption teams for launches, concerts and owambe.</p></div>
-      <div class="bg-ink border border-gold/40 rounded-lg p-5"><p class="font-display text-lg mb-1 text-goldsoft">Need something this week?</p><p class="text-sm text-paper/70 mb-3">Dates are held on confirmation. Message us the date, location and principal profile.</p><a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20have%20a%20date%20to%20cover." target="_blank" rel="noopener" class="inline-block btn-gold text-sm font-bold px-5 py-2.5 rounded-md">Check availability →</a></div>
-    </div>
-  </div>
-</section>
-
-<!-- PROTOCOL -->
-<section id="protocol" class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24">
-  <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2">How we work</p>
-  <h2 class="font-display text-4xl md:text-5xl mb-10">From first call to safe dismissal.</h2>
-  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-    <div class="border-l-2 border-gold pl-4"><p class="font-display text-3xl text-goldsoft">01</p><h3 class="font-semibold mb-1">Confidential briefing</h3><p class="text-sm text-paper/60">WhatsApp, call or email. Principal profile, dates, venues, known concerns. NDA on request.</p></div>
-    <div class="border-l-2 border-gold pl-4"><p class="font-display text-3xl text-goldsoft">02</p><h3 class="font-semibold mb-1">Risk & route assessment</h3><p class="text-sm text-paper/60">We recce venues and routes, grade the threat, and propose team size — no overselling.</p></div>
-    <div class="border-l-2 border-gold pl-4"><p class="font-display text-3xl text-goldsoft">03</p><h3 class="font-semibold mb-1">Deployment & protocol</h3><p class="text-sm text-paper/60">Advance party, close detail, drivers and marshals in position. Arrivals choreographed to the minute.</p></div>
-    <div class="border-l-2 border-gold pl-4"><p class="font-display text-3xl text-goldsoft">04</p><h3 class="font-semibold mb-1">Debrief & report</h3><p class="text-sm text-paper/60">Safe dismissal, incident log, and written recommendations for next time.</p></div>
-  </div>
-</section>
-
-<!-- COVERAGE -->
-<section id="coverage" class="border-y hairline bg-surface/40">
-  <div class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-20 grid lg:grid-cols-[1fr_1fr] gap-10">
-    <div>
-      <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2">Coverage</p>
-      <h2 class="font-display text-4xl mb-4">Based in Redemption City. Deployed nationwide.</h2>
-      <p class="text-sm text-paper/65 leading-relaxed mb-4">Headquarters: <strong class="text-paper">Profound Groups Complex, Redemption City, Mowe, Ogun State</strong> — minutes from the Lagos–Ibadan Expressway, ideal for rapid dispatch to Lagos, Ogun, Oyo, and Abuja runs, plus airport meet-and-greet (LOS) and interstate convoys.</p>
-      <div class="flex flex-wrap gap-2 text-xs">
-        <span class="border hairline rounded-full px-3 py-1.5">Redemption City / Mowe</span>
-        <span class="border hairline rounded-full px-3 py-1.5">Ikeja • Lekki • VI • Ikoyi</span>
-        <span class="border hairline rounded-full px-3 py-1.5">Abeokuta • Ibadan</span>
-        <span class="border hairline rounded-full px-3 py-1.5">Abuja • Nationwide</span>
-        <span class="border hairline rounded-full px-3 py-1.5">Airport (LOS) pickup</span>
+  <header class="appbar">
+    <div class="wrap appbar-in">
+      <a class="brand" href="#/home" aria-label="TeamSamson home">
+        <span class="mark">S<img src="images/logo.png" alt="" onload="this.parentNode.classList.add('has-logo')" onerror="this.remove()"></span>
+        <span>
+          <span class="brand-name" style="display:block">TEAM<b>SAMSON</b></span>
+          <span class="brand-tag">Protection, protocol, consulting and management</span>
+        </span>
+      </a>
+      <nav class="tabs" id="tabs" aria-label="Main"></nav>
+      <div class="appbar-actions">
+        <a class="icon-btn wa" href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20protection%20%2F%20protocol%20support." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></a>
+        <button class="btn btn-gold btn-sm" data-quote>Request cover</button>
       </div>
     </div>
-    <div class="bg-ink border hairline rounded-lg p-6">
-      <p class="text-[11px] uppercase tracking-[.18em] text-goldsoft font-bold mb-3">Typical deployments</p>
-      <ul class="text-sm space-y-2.5 text-paper/75">
-        <li>→ Single CPO for a day — executive movement in Lagos</li>
-        <li>→ 2-man detail + driver — clergy / family weekend cover</li>
-        <li>→ Arrival & protocol team (4–8) — weddings, funerals, launches</li>
-        <li>→ Full event security (10+) — crusades, concerts, camp meetings</li>
-        <li>→ Risk audit & SOP drafting — estates, schools, churches, firms</li>
-      </ul>
-      <button onclick="openModal('quote-modal')" class="mt-5 w-full btn-gold font-bold text-sm py-3 rounded-md">Describe your job — get a quote</button>
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- FAQ -->
-<section id="faq" class="max-w-3xl mx-auto px-5 md:px-8 py-16 md:py-24">
-  <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2 text-center">Questions</p>
-  <h2 class="font-display text-4xl md:text-5xl mb-8 text-center">Before you call.</h2>
-  <div class="space-y-2" id="faq-list"></div>
-</section>
+  <main id="main" tabindex="-1">
 
-<!-- CONTACT -->
-<section id="contact" class="border-t hairline bg-surface/40">
-  <div class="max-w-6xl mx-auto px-5 md:px-8 py-16 md:py-24 grid lg:grid-cols-[1fr_1.2fr] gap-10">
-    <div>
-      <p class="text-[11px] uppercase tracking-[.2em] text-gold font-bold mb-2">Contact</p>
-      <h2 class="font-display text-4xl md:text-5xl mb-3">Talk to command.</h2>
-      <p class="text-paper/60 mb-8 max-w-sm">Fastest is WhatsApp. For formal requests, email or the brief form — we reply with assessment and quote.</p>
-      <div class="space-y-3">
-        <a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20security%20cover." target="_blank" rel="noopener" class="flex items-center justify-between border hairline hover:border-[#25D366]/60 rounded-md px-5 py-4 transition bg-ink">
-          <div><p class="text-sm font-semibold">WhatsApp (24/7)</p><p class="text-xs text-muted">+234 805 522 3392 — tap to chat</p></div>
-          <span class="text-xs text-[#25D366] font-bold">Chat now →</span>
-        </a>
-        <a href="mailto:profoundhospitalities@gmail.com?subject=Security%20Cover%20Request%20—%20TeamSamson" class="flex items-center justify-between border hairline hover:border-gold/60 rounded-md px-5 py-4 transition bg-ink">
-          <div><p class="text-sm font-semibold">Email</p><p class="text-xs text-muted">profoundhospitalities@gmail.com</p></div>
-          <span class="text-xs text-goldsoft font-bold">Write →</span>
-        </a>
-        <div class="flex items-center justify-between border hairline rounded-md px-5 py-4 bg-ink">
-          <div><p class="text-sm font-semibold">Base</p><p class="text-xs text-muted"> Redemption City, Mowe, Ogun State</p></div>
-          <a href="https://www.google.com/maps/search/?api=1&query=Redemption+City+Mowe+Ogun+State" target="_blank" rel="noopener" class="text-xs text-goldsoft font-bold">Map →</a>
+    <!-- ================= HOME ================= -->
+    <section class="page" id="page-home" data-title="TeamSamson — Close Protection, VIP Security, Protocol & Consulting | Mowe, Ogun State">
+      <div class="hero">
+        <div class="hero-media ph" data-slot="hero-home|1600|1000|Home hero photo|corner"></div>
+        <div class="wrap hero-grid">
+          <div>
+            <p class="status"><span class="pulse"></span>Standby 24/7 across Lagos, Ogun, Abuja and nationwide</p>
+            <h1 tabindex="-1">Discreet<br>protection.<span class="gold">Total protocol.</span></h1>
+            <p class="lead">TeamSamson provides <strong>close protection, VIP security, protocol management and security consulting</strong> for executives, families, clergy, dignitaries, events and organisations. Vetted operatives. Quiet movement. Zero embarrassment.</p>
+            <div class="hero-cta">
+              <button class="btn btn-gold" data-quote>Request protection cover</button>
+              <a class="btn btn-wa" href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20urgent%20security%20cover." target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
+            </div>
+            <ul class="chips">
+              <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Background-checked operatives</li>
+              <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Confidentiality by default</li>
+              <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Uniformed or plain-clothes</li>
+            </ul>
+          </div>
+          <aside class="glass" aria-labelledby="tc-title">
+            <p class="fine top">Threat check, 60 seconds</p>
+            <h2 id="tc-title">Do you need cover?</h2>
+            <div class="opts" id="threat-check"></div>
+            <p class="result" id="threat-result" role="status" aria-live="polite" hidden></p>
+            <button class="btn btn-gold btn-block" id="tc-go">Get assessed</button>
+            <p class="fine">No obligation. Assessment is confidential.</p>
+          </aside>
         </div>
       </div>
-    </div>
-    <div class="bg-ink border hairline rounded-lg p-6 md:p-8">
-      <p class="text-xs text-muted mb-1">Protection brief</p>
-      <h3 class="font-display text-2xl mb-5">Tell us what needs covering</h3>
-      <form class="space-y-3" onsubmit="submitBrief(event)">
-        <div class="grid sm:grid-cols-2 gap-3">
-          <input required name="name" placeholder="Your name *" class="rounded-md px-4 py-3 text-sm w-full">
-          <input required name="phone" placeholder="Phone / WhatsApp *" class="rounded-md px-4 py-3 text-sm w-full">
+
+      <section class="wrap section">
+        <div class="sec-head">
+          <div>
+            <h2 class="h2">Four disciplines. One standard: no incidents.</h2>
+            <p class="sub">Tap a service for details, what's included and how to book.</p>
+          </div>
+          <a class="link" href="#/services">All services <svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></a>
         </div>
-        <div class="grid sm:grid-cols-2 gap-3">
-          <select required name="service" class="rounded-md px-4 py-3 text-sm w-full">
-            <option value="" disabled selected>Service needed *</option>
-            <option>Close Protection</option>
-            <option>VIP Security</option>
-            <option>Protocol Management</option>
-            <option>Security Consulting</option>
-            <option>Event Cover (mixed)</option>
-            <option>Other / Not sure</option>
-          </select>
-          <input name="date" type="date" class="rounded-md px-4 py-3 text-sm w-full">
+        <div class="scroller" id="home-services"></div>
+      </section>
+
+      <section class="wrap section">
+        <div class="why">
+          <div>
+            <h2 class="h2">Security that respects your image.</h2>
+            <p class="copy">Anyone can stand at a gate. Our work is different: advance route checks, arrival choreography, crowd buffers, and operatives who know when to be visible and when to disappear. Principals keep their dignity. Hosts keep their programme on time. Guests feel honoured, not harassed.</p>
+          </div>
+          <div class="tiles" id="why-grid"></div>
         </div>
-        <input name="location" placeholder="Location(s) — e.g. Redemption City + Ikeja" class="rounded-md px-4 py-3 text-sm w-full">
-        <textarea name="details" rows="3" placeholder="Principals, guest count, venues, concerns…" class="rounded-md px-4 py-3 text-sm w-full"></textarea>
-        <button type="submit" class="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:brightness-95 text-white font-bold py-3.5 rounded-md transition text-sm">Send Brief via WhatsApp</button>
-        <a href="mailto:profoundhospitalities@gmail.com" class="block text-center text-xs text-muted hover:text-paper transition">Prefer email? profoundhospitalities@gmail.com</a>
-      </form>
-    </div>
-  </div>
-</section>
-</main>
+      </section>
 
-<footer class="border-t hairline">
-  <div class="max-w-6xl mx-auto px-5 md:px-8 py-10 flex flex-col md:flex-row justify-between gap-6">
-    <div>
-      <p class="font-display text-lg">TEAM<span class="text-gold">SAMSON</span></p>
-      <p class="text-sm text-goldsoft italic mt-1">Discreet protection. Total protocol.</p>
-      <p class="text-xs text-muted mt-2">Profound Groups Complex, Redemption City, Mowe, Ogun State</p>
-    </div>
-    <div class="text-sm text-paper/50 space-y-1 md:text-right">
-      <p>WhatsApp: <a class="hover:text-paper" href="https://wa.me/2348055223392">+234 805 522 3392</a></p>
-      <p>Email: <a class="hover:text-paper" href="mailto:profoundhospitalities@gmail.com">profoundhospitalities@gmail.com</a></p>
-      <p class="text-muted" id="footer-year"></p>
-    </div>
-  </div>
-</footer>
+      <section class="wrap section">
+        <div class="tiles" id="shortcuts"></div>
+      </section>
 
-<a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20security%20cover." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] shadow-lg shadow-black/40 flex items-center justify-center hover:brightness-95 transition">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 0 1-12.36 7.57L4 20l1.02-4.5A8.5 8.5 0 1 1 21 11.5Z"/></svg>
-</a>
+      <section class="wrap section">
+        <div class="cta-band">
+          <div>
+            <h2>Need something this week?</h2>
+            <p>Dates are held on confirmation. Message us the date, location and principal profile.</p>
+          </div>
+          <a class="btn btn-gold" href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20have%20a%20date%20to%20cover." target="_blank" rel="noopener">Check availability</a>
+        </div>
+      </section>
+    </section>
 
-<!-- SERVICE MODAL -->
-<div id="service-modal" class="modal fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-hidden="true">
-  <div class="absolute inset-0 bg-black/80" onclick="closeModal('service-modal')"></div>
-  <div class="absolute inset-0 overflow-y-auto p-3 md:p-6 flex items-start md:items-center justify-center" onclick="if(event.target===this)closeModal('service-modal')">
-    <div class="modal-panel bg-surface border hairline w-full max-w-2xl rounded-lg relative my-4 shadow-2xl">
-      <div class="flex items-center justify-between gap-3 px-5 md:px-7 py-4 border-b hairline sticky top-0 bg-surface2/80 rounded-t-lg">
-        <div><p class="text-[11px] uppercase tracking-[.18em] text-goldsoft font-bold">Service details</p><h3 id="service-modal-title" class="font-display text-lg leading-tight">Service</h3></div>
-        <button onclick="closeModal('service-modal')" class="text-xs font-bold border hairline rounded-full px-4 py-2 hover:border-gold transition">✕ Close</button>
+    <!-- ================= SERVICES ================= -->
+    <section class="page" id="page-services" hidden data-title="Services — TeamSamson">
+      <div class="wrap page-head">
+        <h1 tabindex="-1">Four disciplines. One standard: no incidents.</h1>
+        <p>Tap any service for full details, what's included, and how to book. Every deployment starts with a confidential threat and route assessment.</p>
       </div>
-      <div class="modal-scroll px-5 md:px-7 py-5"><div id="service-modal-body"></div></div>
-      <div class="flex flex-col sm:flex-row gap-2 px-5 md:px-7 py-4 border-t hairline bg-black/20 rounded-b-lg">
-        <button onclick="closeModal('service-modal')" class="flex-1 text-sm font-semibold px-5 py-2.5 rounded-md border hairline hover:border-gold transition">← Back</button>
-        <button onclick="closeModal('service-modal');openModal('quote-modal')" class="flex-1 btn-gold text-sm font-bold px-5 py-2.5 rounded-md">Request this service</button>
+      <div class="wrap section"><div class="grid-auto" id="svc-list"></div></div>
+      <div class="wrap section">
+        <h2 class="h2">Who we cover</h2>
+        <p class="sub">The people and occasions we work with most.</p>
+        <div class="grid-ov" id="sector-grid"></div>
+      </div>
+      <div class="wrap section">
+        <h2 class="h2">Team sizes for common jobs</h2>
+        <p class="sub">Tap a deployment to see what it includes and who it suits.</p>
+        <div class="rows" id="deploy-list"></div>
+        <div class="btn-row" style="margin-top:18px"><button class="btn btn-gold" data-quote>Describe your job and get a quote</button></div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="page" id="page-process" hidden data-title="How we work — TeamSamson">
+      <div class="wrap page-head">
+        <h1 tabindex="-1">From first call to safe dismissal.</h1>
+        <p>Four steps, one command. Tap a step to see what we need from you and what you get back.</p>
+      </div>
+      <div class="wrap section"><ol class="steps" id="step-list"></ol></div>
+      <div class="wrap section">
+        <div class="two-col">
+          <div class="panel">
+            <h2 class="h3">What to send in your first message</h2>
+            <ul class="checks" id="first-msg"></ul>
+            <a class="btn btn-wa btn-block" id="starter-wa" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Send a starter brief on WhatsApp</a>
+          </div>
+          <div class="panel">
+            <h2 class="h3">What you can count on</h2>
+            <ul class="checks" id="commitments"></ul>
+            <p class="fine">Formal NDAs and no-photo restrictions on principals are available on request.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COVERAGE ================= -->
+    <section class="page" id="page-coverage" hidden data-title="Coverage — TeamSamson">
+      <div class="wrap page-head">
+        <h1 tabindex="-1">Based in Redemption City. Deployed nationwide.</h1>
+        <p>Rapid dispatch from our Mowe base to Lagos, Ogun, Oyo and Abuja, plus airport reception at LOS and interstate convoys.</p>
+      </div>
+      <div class="wrap section">
+        <div class="hq">
+          <div class="panel">
+            <h2 class="h3">Headquarters</h2>
+            <p><strong>Profound Groups Complex, Redemption City, Mowe, Ogun State</strong>, minutes from the Lagos–Ibadan Expressway. Ideal for rapid dispatch to Lagos, Ogun, Oyo, and Abuja runs, plus airport meet-and-greet (LOS) and interstate convoys.</p>
+            <div class="btn-row">
+              <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=Redemption+City+Mowe+Ogun+State" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Open in Maps</a>
+              <a class="btn btn-ghost" href="tel:+2348055223392"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+            </div>
+          </div>
+          <div class="map"><iframe title="Map of Redemption City, Mowe, Ogun State" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Redemption+City,+Mowe,+Ogun+State&output=embed"></iframe></div>
+        </div>
+      </div>
+      <div class="wrap section">
+        <h2 class="h2">Where we deploy</h2>
+        <p class="sub">Tap a region for what we cover there.</p>
+        <div class="grid-reg" id="region-grid"></div>
+      </div>
+      <div class="wrap section">
+        <h2 class="h2">How fast we can move</h2>
+        <div class="tiles">
+          <div class="tile"><svg class="ic" aria-hidden="true"><use href="#i-clock" /></svg><h3>Small details</h3><p>Same-day deployment is often possible within Redemption City, Mowe and Lagos.</p></div>
+          <div class="tile"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg><h3>Larger event teams</h3><p>Allow 48–72 hours so we can recce venues and brief the team.</p></div>
+          <div class="tile"><svg class="ic" aria-hidden="true"><use href="#i-clipboard"/></svg><h3>Dates are held on confirmation</h3><p>Message us the date first, then the location and principal profile.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="page" id="page-contact" hidden data-title="Contact — TeamSamson">
+      <div class="wrap page-head">
+        <h1 tabindex="-1">Talk to command.</h1>
+        <p>Fastest is WhatsApp. For formal requests, email or the brief form. We reply with an assessment and quote.</p>
+      </div>
+      <div class="wrap section contact-grid">
+        <div class="contact-list">
+          <a class="crow wa" href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20security%20cover." target="_blank" rel="noopener">
+            <span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></span>
+            <span><b>WhatsApp (24/7)</b><small>+234 805 522 3392. Tap to chat</small></span>
+            <span class="go"><svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></span>
+          </a>
+          <a class="crow" href="tel:+2348055223392">
+            <span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span>
+            <span><b>Call</b><small>+234 805 522 3392</small></span>
+            <span class="go"><svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></span>
+          </a>
+          <a class="crow" href="mailto:profoundhospitalities@gmail.com?subject=Security%20Cover%20Request%20%E2%80%94%20TeamSamson">
+            <span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span><b>Email</b><small>profoundhospitalities@gmail.com</small></span>
+            <span class="go"><svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></span>
+          </a>
+          <a class="crow" href="https://www.google.com/maps/search/?api=1&query=Redemption+City+Mowe+Ogun+State" target="_blank" rel="noopener">
+            <span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <span><b>Base</b><small>Redemption City, Mowe, Ogun State</small></span>
+            <span class="go"><svg class="ic" aria-hidden="true"><use href="#i-ext"/></svg></span>
+          </a>
+        </div>
+        <div class="panel">
+          <p class="fine">Protection brief</p>
+          <h2 class="h3">Tell us what needs covering</h2>
+          <div data-brief-slot="c"></div>
+        </div>
+      </div>
+      <div class="wrap section" id="faq">
+        <div class="faq">
+          <h2 class="h2" style="text-align:center">Before you call.</h2>
+          <p class="sub" style="text-align:center;margin-inline:auto">Search the answers below, or ask us directly.</p>
+          <div class="search"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg><input type="search" id="faq-search" placeholder="Search questions" aria-label="Search questions" autocomplete="off"></div>
+          <div class="acc-list" id="faq-list"></div>
+          <p class="empty" id="faq-empty" hidden>No matching question. <a href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20have%20a%20question." target="_blank" rel="noopener">Ask us on WhatsApp</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-in">
+      <div>
+        <p class="brand-name">TEAM<b>SAMSON</b></p>
+        <p class="tagline">Discreet protection. Total protocol.</p>
+        <p class="fine" style="margin-top:8px">Profound Groups Complex, Redemption City, Mowe, Ogun State</p>
+      </div>
+      <div class="footer-links">
+        <p>WhatsApp: <a href="https://wa.me/2348055223392">+234 805 522 3392</a></p>
+        <p>Email: <a href="mailto:profoundhospitalities@gmail.com">profoundhospitalities@gmail.com</a></p>
+        <p class="fine" id="footer-year"></p>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="dock" id="dock" aria-label="App"></nav>
+
+  <a class="fab" href="https://wa.me/2348055223392?text=Hello%20TeamSamson!%20I%20need%20security%20cover." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></a>
+</div>
+
+<noscript>
+  <div style="padding:24px;text-align:center;background:#111823;color:#eef1f5">
+    This site needs JavaScript. To reach TeamSamson, WhatsApp or call +234 805 522 3392, or email profoundhospitalities@gmail.com.
+  </div>
+</noscript>
+
+<!-- ================= SHEETS ================= -->
+<div class="sheet" id="detail-sheet" role="dialog" aria-modal="true" aria-labelledby="detail-title" aria-hidden="true">
+  <div class="sheet-backdrop" data-close></div>
+  <div class="sheet-panel" tabindex="-1">
+    <div class="sheet-grab" aria-hidden="true"><span></span></div>
+    <div class="sheet-pager" id="detail-pager">
+      <button type="button" data-detail-nav="-1" aria-label="Previous"><svg class="ic" aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+      <span id="detail-count"></span>
+      <button type="button" data-detail-nav="1" aria-label="Next"><svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+    </div>
+    <button type="button" class="sheet-close" data-close aria-label="Close"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <div class="sheet-scroll" id="detail-body"></div>
+    <div class="sheet-foot" id="detail-foot"></div>
+  </div>
+</div>
+
+<div class="sheet" id="quote-sheet" role="dialog" aria-modal="true" aria-labelledby="quote-title" aria-hidden="true">
+  <div class="sheet-backdrop" data-close></div>
+  <div class="sheet-panel" tabindex="-1">
+    <div class="sheet-grab" aria-hidden="true"><span></span></div>
+    <button type="button" class="sheet-close" data-close aria-label="Close"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <div class="sheet-scroll">
+      <div class="ph q-banner" data-slot="quote-banner|1200|375|Request cover banner"></div>
+      <div class="q-main">
+        <h2 id="quote-title">Protection brief</h2>
+        <p>Tell us what needs covering. You review the message before it opens in WhatsApp.</p>
+        <div data-brief-slot="q"></div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- QUOTE MODAL -->
-<div id="quote-modal" class="modal fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-hidden="true">
-  <div class="absolute inset-0 bg-black/80" onclick="closeModal('quote-modal')"></div>
-  <div class="absolute inset-0 overflow-y-auto p-3 md:p-6 flex items-start md:items-center justify-center" onclick="if(event.target===this)closeModal('quote-modal')">
-    <div class="modal-panel bg-surface border hairline w-full max-w-xl rounded-lg relative my-4 shadow-2xl">
-      <div class="flex items-center justify-between gap-3 px-5 md:px-7 py-4 border-b hairline sticky top-0 bg-surface2/80 rounded-t-lg">
-        <div><p class="text-[11px] uppercase tracking-[.18em] text-goldsoft font-bold">Request cover</p><h3 class="font-display text-lg leading-tight">Protection brief</h3></div>
-        <button onclick="closeModal('quote-modal')" class="text-xs font-bold border hairline rounded-full px-4 py-2 hover:border-gold transition">✕ Close</button>
-      </div>
-      <div class="modal-scroll px-5 md:px-7 py-5">
-        <form id="quote-form" class="space-y-3" onsubmit="submitBrief(event)">
-          <div class="grid sm:grid-cols-2 gap-3">
-            <input required name="name" placeholder="Your name *" class="rounded-md px-4 py-3 text-sm w-full">
-            <input required name="phone" placeholder="Phone / WhatsApp *" class="rounded-md px-4 py-3 text-sm w-full">
-          </div>
-          <select required name="service" id="quote-service" class="rounded-md px-4 py-3 text-sm w-full">
-            <option value="" disabled selected>Service needed *</option>
-            <option>Close Protection</option>
-            <option>VIP Security</option>
-            <option>Protocol Management</option>
-            <option>Security Consulting</option>
-            <option>Event Cover (mixed)</option>
-            <option>Other / Not sure</option>
-          </select>
-          <div class="grid sm:grid-cols-2 gap-3">
-            <input name="date" type="date" class="rounded-md px-4 py-3 text-sm w-full">
-            <input name="location" placeholder="Location(s)" class="rounded-md px-4 py-3 text-sm w-full">
-          </div>
-          <textarea name="details" rows="3" placeholder="Principals, venues, concerns…" class="rounded-md px-4 py-3 text-sm w-full"></textarea>
-          <button class="w-full bg-[#25D366] text-white font-bold text-sm py-3 rounded-md hover:brightness-95 transition">Send via WhatsApp</button>
-          <p class="text-[11px] text-muted text-center">Opens WhatsApp with your brief addressed to TeamSamson. Confidential — no payment taken here.</p>
-        </form>
-      </div>
-    </div>
-  </div>
+<div class="sheet lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <div class="sheet-backdrop" data-close></div>
+  <figure class="lb-fig"><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button type="button" class="lb-btn lb-close" data-close aria-label="Close photo"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+  <button type="button" class="lb-btn lb-prev" data-lb-nav="-1" aria-label="Previous photo"><svg class="ic" aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+  <button type="button" class="lb-btn lb-next" data-lb-nav="1" aria-label="Next photo"><svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></button>
 </div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
-const WA_NUMBER = "2348055223392";
-const waLink = (m) => "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(m);
+(function(){
+'use strict';
 
-const services = [
-  { id:1, icon:"◈", title:"Close Protection",
-    teaser:"One-to-one executive protection — plain-clothes or low-profile detail for principals on the move.",
-    body:"A dedicated Close Protection Officer (CPO) stays on the principal from pickup to safe dismissal: advance route checks, arrival and exit choreography, crowd buffers, and 24-hour comms with command. Ideal for executives, clergy, public figures, families and anyone under unwanted attention.",
-    included:["Dedicated CPO / 2-man detail options","Advance route & venue recce","Airport pickup, convoy & escort driving","Residential & hotel-floor checks","Daily movement log & debrief"],
-    best:"Executives, clergy, dignitaries, families, witnesses, persons under threat." },
-  { id:2, icon:"⬢", title:"VIP Security",
-    teaser:"Visible, disciplined security for VIPs, venues and events — gates, crowds and backstage handled.",
-    body:"Uniformed or suited teams for access control, perimeter, VVIP holding areas, stage/pulpit cover and crowd management. From 2 officers for a private dinner to 20+ for crusades, concerts and camp meetings. Command-led, radio-coordinated, incident-logged.",
-    included:["Access control & accreditation support","Crowd control & anti-disruption teams","VVIP holding / green-room cover","Stage, pulpit & altar-call protection","Radio comms, supervisor & incident log"],
-    best:"Events, churches, weddings, launches, concerts, estates needing steady cover." },
-  { id:3, icon:"✦", title:"Protocol Management",
-    teaser:"Arrivals, seating, escort order and guest handling — your guests feel honoured, your programme stays on time.",
-    body:"We run the order of proceedings around people, not just paper: airport reception, motorcade order, usher liaison, seating of dignitaries, award presentations, clergy courtesies and departure sequence. The audience sees grace; behind it is a timed plan.",
-    included:["Arrival / departure choreography","Order of precedence & seating plan","Airport meet-and-greet & motorcade","Liaison with ushers, media & security","Guest-list & holding-room management"],
-    best:"Government, corporate, church and family events hosting dignitaries." },
-  { id:4, icon:"◎", title:"Security Consulting",
-    teaser:"Risk assessments, SOPs and training — know your exposure before an incident teaches you.",
-    body:"Walk-through audits for homes, estates, schools, churches and offices: threat grading, guard-force review, CCTV/access recommendations, emergency & evacuation plans, and staff briefings. You get a written report with prioritised, costed actions — not fear.",
-    included:["Threat & vulnerability assessment","Guard-force audit & SOP drafting","CCTV, access & perimeter advice","Emergency / evacuation planning","Staff & usher security briefing"],
-    best:"Organisations, estates, schools, ministries and families planning ahead." }
+const $  = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const icon = (n, c = '') => '<svg class="ic ' + c + '" aria-hidden="true" focusable="false"><use href="#i-' + n + '"/></svg>';
+const waLink = m => 'https://wa.me/' + CONFIG.waNumber + '?text=' + encodeURIComponent(m);
+
+/* =====================================================================
+   CONTENT  (edit copy here)
+   ===================================================================== */
+const SERVICES = [
+  { slug:'close-protection', icon:'shield', title:'Close Protection',
+    teaser:'One-to-one executive protection: a plain-clothes or low-profile detail for principals on the move.',
+    body:'A dedicated Close Protection Officer (CPO) stays on the principal from pickup to safe dismissal: advance route checks, arrival and exit choreography, crowd buffers, and 24-hour comms with command. Ideal for executives, clergy, public figures, families and anyone under unwanted attention.',
+    facts:[['Typical team','1 CPO, or a 2-man detail'],['Style','Plain-clothes or low-profile'],['Lead time','Same-day is often possible for small details near Mowe and Lagos']],
+    included:['Dedicated CPO / 2-man detail options','Advance route and venue recce','Airport pickup, convoy and escort driving','Residential and hotel-floor checks','Daily movement log and debrief'],
+    best:'Executives, clergy, dignitaries, families, witnesses, persons under threat.',
+    gallery:['Route and venue recce','Arrival and exit','Escort driving'] },
+  { slug:'vip-security', icon:'users', title:'VIP Security',
+    teaser:'Visible, disciplined security for VIPs, venues and events. Gates, crowds and backstage handled.',
+    body:'Uniformed or suited teams for access control, perimeter, VVIP holding areas, stage and pulpit cover and crowd management. From 2 officers for a private dinner to 20+ for crusades, concerts and camp meetings. Command-led, radio-coordinated, incident-logged.',
+    facts:[['Typical team','2 officers for a private dinner, 20+ for crusades and concerts'],['Style','Uniformed or suited'],['Lead time','48–72 hours for larger event teams']],
+    included:['Access control and accreditation support','Crowd control and anti-disruption teams','VVIP holding / green-room cover','Stage, pulpit and altar-call protection','Radio comms, supervisor and incident log'],
+    best:'Events, churches, weddings, launches, concerts, estates needing steady cover.',
+    gallery:['Access control','Crowd management','VVIP holding area'] },
+  { slug:'protocol', icon:'star', title:'Protocol Management',
+    teaser:'Arrivals, seating, escort order and guest handling. Your guests feel honoured, your programme stays on time.',
+    body:'We run the order of proceedings around people, not just paper: airport reception, motorcade order, usher liaison, seating of dignitaries, award presentations, clergy courtesies and departure sequence. The audience sees grace; behind it is a timed plan.',
+    facts:[['Typical team','Arrival and protocol team of 4–8'],['Covers','Airport reception to departure sequence'],['Lead time','Message the date first; dates are held on confirmation']],
+    included:['Arrival and departure choreography','Order of precedence and seating plan','Airport meet-and-greet and motorcade','Liaison with ushers, media and security','Guest-list and holding-room management'],
+    best:'Government, corporate, church and family events hosting dignitaries.',
+    gallery:['Airport reception','Motorcade order','Seating of dignitaries'] },
+  { slug:'consulting', icon:'clipboard', title:'Security Consulting',
+    teaser:'Risk assessments, SOPs and training. Know your exposure before an incident teaches you.',
+    body:'Walk-through audits for homes, estates, schools, churches and offices: threat grading, guard-force review, CCTV and access recommendations, emergency and evacuation plans, and staff briefings. You get a written report with prioritised, costed actions, not fear.',
+    facts:[['Format','Walk-through audit of your site'],['You receive','Written report with prioritised, costed actions'],['Lead time','Booked by date; send your brief to start']],
+    included:['Threat and vulnerability assessment','Guard-force audit and SOP drafting','CCTV, access and perimeter advice','Emergency / evacuation planning','Staff and usher security briefing'],
+    best:'Organisations, estates, schools, ministries and families planning ahead.',
+    gallery:['Site walk-through','Access and perimeter review','Evacuation planning'] }
+];
+SERVICES.forEach(s => s.key = 'service-' + s.slug);
+
+const SECTORS = [
+  { slug:'executive-family', title:'Executive and family cover', sub:'Daily detail, school runs, travel escort', preset:'Close Protection',
+    teaser:'Daily detail, school runs, travel escort, residential checks. Plain-clothes where you want privacy.',
+    body:'Protection that fits around your routine instead of interrupting it. Officers plan movements in advance, check residences and hotel floors, and stay low-profile so daily life carries on.',
+    facts:[['Service','Close Protection'],['Typical team','1 CPO to a 2-man detail with driver'],['Style','Plain-clothes where you want privacy']],
+    included:['Daily detail','School runs','Travel escort','Residential checks','Plain-clothes where privacy matters'],
+    best:'Executives, families, public figures and anyone with visible daily movement.' },
+  { slug:'churches-camps', title:'Churches, camps and crusades', sub:'Pulpit, altar call, minister\'s convoy', preset:'VIP Security',
+    teaser:'Pulpit protection, altar-call crowd control, minister\'s convoy, camp-meeting traffic and gate protocol. Our home ground around Redemption City.',
+    body:'We cover the pulpit and altar-call crowd, the minister\'s convoy, and the gate and traffic flow that camp meetings demand, so the programme runs undisturbed.',
+    facts:[['Services','VIP Security and Protocol'],['Typical team','10+ for full events'],['Base','Redemption City, Mowe']],
+    included:['Pulpit protection','Altar-call crowd control','Minister\'s convoy','Camp-meeting traffic','Gate protocol'],
+    best:'Ministries, camp meetings, crusades and church programmes.' },
+  { slug:'corporate-events', title:'Corporate, weddings and events', sub:'Access control, backstage, VVIP arrivals', preset:'Event Cover (mixed)',
+    teaser:'Access control, backstage holding, VVIP arrival sequence, anti-disruption teams for launches, concerts and owambe.',
+    body:'Guests should notice the occasion, not the security. We manage access, hold VVIPs backstage, sequence arrivals and keep anti-disruption teams in place.',
+    facts:[['Services','VIP Security and Protocol'],['Typical team','4–8 protocol team; 10+ for full event security'],['Lead time','48–72 hours for larger teams']],
+    included:['Access control','Backstage holding','VVIP arrival sequence','Anti-disruption teams','Launches, concerts and owambe'],
+    best:'Corporate hosts, wedding and funeral families, promoters and venues.' }
+];
+SECTORS.forEach(s => s.key = 'sector-' + s.slug);
+
+const DEPLOYMENTS = [
+  { slug:'single-cpo', title:'Single CPO for a day', sub:'Executive movement in Lagos', service:'Close Protection',
+    teaser:'One dedicated officer for a day of executive movement in Lagos.',
+    body:'The smallest detail we run: one Close Protection Officer with your principal from pickup to safe dismissal, with route checks and comms to command.',
+    facts:[['Team size','1 officer'],['Service','Close Protection'],['Lead time','Same-day often possible']],
+    included:['Route check before movement','Pickup to safe dismissal','Comms with command','Daily movement log'],
+    best:'Executives and individuals who need cover for a day.' },
+  { slug:'two-man-detail', title:'2-man detail with driver', sub:'Clergy and family weekend cover', service:'Close Protection',
+    teaser:'Two officers and a driver for clergy or family weekend cover.',
+    body:'Two officers plus a driver keep a principal covered across a weekend of travel, venues and residence.',
+    facts:[['Team size','2 officers and a driver'],['Service','Close Protection'],['Best for','Clergy and family weekends']],
+    included:['Two Close Protection Officers','Dedicated driver','Advance venue and route recce','Residential and hotel checks'],
+    best:'Clergy, families and principals with a full weekend programme.' },
+  { slug:'protocol-team', title:'Arrival and protocol team (4–8)', sub:'Weddings, funerals, launches', service:'Protocol Management',
+    teaser:'A 4–8 person team for arrivals, seating and guest handling.',
+    body:'A protocol team that choreographs arrivals, seats dignitaries by precedence and keeps the programme moving on time.',
+    facts:[['Team size','4–8 people'],['Service','Protocol Management'],['Best for','Weddings, funerals, launches']],
+    included:['Arrival and departure choreography','Seating and order of precedence','Usher and media liaison','Guest and holding-room management'],
+    best:'Hosts receiving dignitaries or large guest lists.' },
+  { slug:'full-event', title:'Full event security (10+)', sub:'Crusades, concerts, camp meetings', service:'VIP Security',
+    teaser:'A command-led team of 10 or more for large events.',
+    body:'Uniformed or suited teams for access control, perimeter, VVIP holding and crowd management, coordinated by radio under a supervisor.',
+    facts:[['Team size','10+ officers'],['Service','VIP Security'],['Lead time','48–72 hours']],
+    included:['Access control and accreditation support','Crowd control and anti-disruption teams','VVIP holding cover','Radio comms, supervisor and incident log'],
+    best:'Crusades, concerts, camp meetings and large launches.' },
+  { slug:'risk-audit', title:'Risk audit and SOP drafting', sub:'Estates, schools, churches, firms', service:'Security Consulting',
+    teaser:'A walk-through audit and written report with costed actions.',
+    body:'We walk your site, grade the threats, review the guard force and hand you a written report with prioritised, costed actions and SOPs.',
+    facts:[['Format','Walk-through audit'],['Service','Security Consulting'],['You receive','Written report and SOPs']],
+    included:['Threat and vulnerability assessment','Guard-force audit','SOP drafting','Emergency and evacuation planning'],
+    best:'Estates, schools, churches, ministries, offices and families.' }
+];
+DEPLOYMENTS.forEach(d => d.key = 'deployment-' + d.slug);
+
+const REGIONS = [
+  { slug:'mowe', title:'Redemption City and Mowe', short:'Headquarters', loc:'Redemption City, Mowe',
+    teaser:'Headquarters at Profound Groups Complex, minutes from the Lagos–Ibadan Expressway.',
+    body:'Our base is Profound Groups Complex in Redemption City. Its position near the Lagos–Ibadan Expressway makes it ideal for rapid dispatch to Lagos, Ogun and Oyo, and for runs to Abuja.',
+    facts:[['Role','Headquarters'],['Lead time','Same-day often possible for small details'],['Address','Profound Groups Complex, Redemption City']],
+    incTitle:'Typical work here', included:['Camp meetings, crusades and church programmes','Gate protocol and camp-meeting traffic','Same-day details when notice is short'],
+    best:'Programmes and principals based in or around Redemption City and Mowe.' },
+  { slug:'lagos', title:'Lagos', short:'Ikeja, Lekki, VI, Ikoyi', loc:'Lagos',
+    teaser:'Rapid dispatch into Ikeja, Lekki, Victoria Island and Ikoyi.',
+    body:'We dispatch from our Mowe base into Ikeja, Lekki, Victoria Island and Ikoyi for executive movement, events and airport work.',
+    facts:[['Areas','Ikeja, Lekki, VI, Ikoyi'],['Small details','Same-day often possible'],['Larger teams','48–72 hours']],
+    incTitle:'Typical work here', included:['Executive movement','Events and venue cover','Airport (LOS) reception','Same-day small details'],
+    best:'Executives, hosts and organisations operating across Lagos.' },
+  { slug:'abeokuta-ibadan', title:'Abeokuta and Ibadan', short:'Ogun and Oyo', loc:'Abeokuta / Ibadan',
+    teaser:'Ogun and Oyo cover from our Mowe base.',
+    body:'We cover Ogun and Oyo from our Mowe base, including Abeokuta and Ibadan, for events, programmes and principals on the move.',
+    facts:[['Areas','Abeokuta, Ibadan'],['States','Ogun and Oyo'],['Dispatch from','Mowe']],
+    incTitle:'Typical work here', included:['Event and programme cover','Convoys and escort driving','Executive movement'],
+    best:'Events and principals in Ogun and Oyo.' },
+  { slug:'abuja', title:'Abuja and nationwide', short:'Interstate convoys', loc:'Abuja',
+    teaser:'Abuja runs, interstate convoys and nationwide deployments.',
+    body:'Abuja runs, interstate convoys and nationwide deployments. Send the dates and locations and we plan the advance work before the team moves.',
+    facts:[['Areas','Abuja and nationwide'],['Movement','Interstate convoys'],['To book','Send dates and locations first']],
+    incTitle:'Typical work here', included:['Abuja runs','Interstate convoys','Nationwide deployment','Advance recce of venues and routes'],
+    best:'Principals and organisations needing cover outside the south-west.' },
+  { slug:'airport-los', title:'Airport (LOS) pickup', short:'Meet-and-greet', loc:'Lagos Airport (LOS)',
+    teaser:'Airport reception, meet-and-greet and escort from LOS.',
+    body:'Airport reception at Lagos (LOS): we meet your principal or guests on arrival and move them by escorted convoy to the venue, with protocol handling from the terminal.',
+    facts:[['Airport','Lagos (LOS)'],['Services','Protocol and Close Protection'],['To book','Send the date and arrival details']],
+    incTitle:'Typical work here', included:['Airport meet-and-greet','Escort convoy to venue','Motorcade order','Guest handling on arrival'],
+    best:'Dignitaries, guests and families arriving through LOS.' }
+];
+REGIONS.forEach(r => { r.key = 'region-' + r.slug; r.sub = r.short; });
+
+const STEPS = [
+  { slug:'briefing', title:'Confidential briefing', service:'',
+    teaser:'WhatsApp, call or email. Principal profile, dates, venues, known concerns. NDA on request.',
+    body:'Start however suits you: WhatsApp, a call or email. Tell us who needs covering, when and where, and anything that worries you. Everything is treated as confidential.',
+    facts:[['Channel','WhatsApp, call or email'],['Confidentiality','NDA on request'],['Reply','Assessment and quote']],
+    incTitle:'What to send us', included:['Principal profile','Dates and times','Venues and locations','Known concerns','Guest count, for events'],
+    best:'Anyone who is not sure what level of cover they need. No obligation.' },
+  { slug:'assessment', title:'Risk and route assessment', service:'',
+    teaser:'We recce venues and routes, grade the threat, and propose team size. No overselling.',
+    body:'Before boots hit ground we recce venues and routes, grade the threat and propose a team size. You get a clear quote with no hidden extras.',
+    facts:[['We do','Venue and route recce'],['You get','Team size proposal and quote'],['Approach','No overselling']],
+    incTitle:'What happens', included:['Venue recce','Route planning','Hospital and exit mapping','Threat grading','Proposed team size and quote'],
+    best:'Clients who want the right-sized team, not the biggest one.' },
+  { slug:'deployment', title:'Deployment and protocol', service:'',
+    teaser:'Advance party, close detail, drivers and marshals in position. Arrivals choreographed to the minute.',
+    body:'Advance party, close detail, drivers and marshals take position. Arrivals are choreographed to the minute and the whole team stays radio-coordinated under a supervisor.',
+    facts:[['Team','Advance party, close detail, drivers, marshals'],['Comms','Radio, with a supervisor'],['Log','Incident log kept']],
+    incTitle:'What happens', included:['Advance party in place','Close detail on the principal','Drivers and event marshals','Arrival and departure choreography','Radio comms and supervisor'],
+    best:'The day itself, from first arrival to last departure.' },
+  { slug:'debrief', title:'Debrief and report', service:'',
+    teaser:'Safe dismissal, incident log, and written recommendations for next time.',
+    body:'The job ends with a safe dismissal and a debrief. You receive the incident log, photos where permitted, and written recommendations for next time.',
+    facts:[['You receive','Incident log and recommendations'],['Photos','Where permitted'],['Ends with','Safe dismissal']],
+    incTitle:'What you receive', included:['Safe dismissal','Incident log','Photos where permitted','Written recommendations'],
+    best:'Clients who want a record and a plan for the next event.' }
+];
+STEPS.forEach(s => s.key = 'step-' + s.slug);
+
+const WHY = [
+  { icon:'route',     t:'Advance work first',     d:'Venue recce, route planning, hospital and exit mapping before boots hit ground.' },
+  { icon:'star',      t:'Protocol-grade manners', d:'Trained in arrivals, seating, escort order, clergy and cultural courtesies.' },
+  { icon:'users',     t:'Scalable teams',         d:'One close-protection officer to a full detail: drivers, advance party, event marshals.' },
+  { icon:'clipboard', t:'Reports and debrief',    d:'Incident log, photos where permitted, and recommendations after every job.' }
+];
+const SHORTCUTS = [
+  { icon:'route', t:'How we work',      d:'Four steps from first call to safe dismissal.', href:'#/process' },
+  { icon:'pin',   t:'Where we deploy',  d:'Lagos, Ogun, Oyo, Abuja and airport pickup.',   href:'#/coverage' },
+  { icon:'chat',  t:'Common questions', d:'Speed, pricing, NDAs and armed cover.',          href:'#/contact' }
+];
+const FIRST_MSG = ['Who needs covering (principal profile)','Dates and times','Venues and locations','Guest count, for events','Any known concerns'];
+const COMMITMENTS = ['Background-checked operatives','Confidentiality by default','Uniformed or plain-clothes, your choice','Written debrief and incident log after every job'];
+const THREAT = [
+  'You are a public figure, executive, clergy or dignitary with visible movement',
+  'You have an event, arrival, convoy, church programme or tour coming up',
+  'You have received threats, unwanted attention, or crowd-control concerns',
+  'You need airport pickup, escort, or guest / VIP protocol handling'
+];
+const FAQS = [
+  ['How fast can you deploy?','Within Redemption City / Mowe and Lagos, same-day deployment is often possible for small details. Larger event teams need 48–72 hours. Message us the date first. Dates are held on confirmation.'],
+  ['Are your operatives armed?','We deploy to Nigerian law: licensed approach, emphasis on prevention, de-escalation, route and crowd discipline. Where armed cover is lawful and required, it is arranged through proper channels and stated in writing.'],
+  ['Plain-clothes or uniformed?','Your choice. Close protection is typically plain-clothes or low-profile. Events and gates are uniformed or suited for deterrence. Mixed details are common.'],
+  ['How is pricing calculated?','Team size × days × risk/location. A single CPO day costs far less than a full event detail. Send the brief and we return a clear quote with no hidden extras.'],
+  ['Do you sign NDAs?','Yes. Confidentiality is default; formal NDAs and image restrictions (no photos of principals) are available on request.'],
+  ['Where do you operate?','Base: Profound Groups Complex, Redemption City, Mowe, Ogun State. We cover Lagos, Ogun, Oyo, Abuja and nationwide deployments, including airport reception at LOS.'],
+  ['What should I send to get a quote?','The principal profile, dates, venues, guest count for events, and any known concerns. The brief form on this site builds the message for you and opens it in WhatsApp.'],
+  ['Do you provide drivers and convoy escort?','Yes. Convoy and escort driving is part of close protection, and larger details add drivers, an advance party and event marshals.'],
+  ['Can I book protocol without security?','Yes. Protocol management is its own service: arrivals, seating, escort order, usher liaison and guest handling. It can stand alone or be combined with security.'],
+  ['Will I get a report afterwards?','Yes. After every job you receive an incident log, photos where permitted, and written recommendations.']
 ];
 
-const faqs = [
-  ["How fast can you deploy?","Within Redemption City / Mowe and Lagos, same-day deployment is often possible for small details. Larger event teams need 48–72 hours. Message us the date first — dates are held on confirmation."],
-  ["Are your operatives armed?","We deploy to Nigerian law: licensed approach, emphasis on prevention, de-escalation, route and crowd discipline. Where armed cover is lawful and required, it is arranged through proper channels and stated in writing."],
-  ["Plain-clothes or uniformed?","Your choice. Close protection is typically plain-clothes/low-profile. Events and gates are uniformed or suited for deterrence. Mixed details are common."],
-  ["How is pricing calculated?","Team size × days × risk/location. A single CPO day costs far less than a full event detail. Send the brief and we return a clear quote — no hidden extras."],
-  ["Do you sign NDAs?","Yes. Confidentiality is default; formal NDAs and image restrictions (no photos of principals) are available on request."],
-  ["Where do you operate?","Base: Profound Groups Complex, Redemption City, Mowe, Ogun State. We cover Lagos, Ogun, Oyo, Abuja and nationwide deployments, including airport reception at LOS."]
-];
+const COLL = {
+  services:    { label:'Service',    items:SERVICES,    foot: it => ({ primary:'Request this service', service:it.title, wa:'Hello TeamSamson! I need "' + it.title + '" — please assess me.' }) },
+  sectors:     { label:'Sector',     items:SECTORS,     foot: it => ({ primary:'Request cover', service:it.preset, wa:'Hello TeamSamson! I need cover for: ' + it.title + '.' }) },
+  deployments: { label:'Deployment', items:DEPLOYMENTS, foot: it => ({ primary:'Get a quote', service:it.service, details:'Deployment: ' + it.title, wa:'Hello TeamSamson! I would like a quote for: ' + it.title + '.' }) },
+  regions:     { label:'Region',     items:REGIONS,     foot: it => ({ primary:'Request cover here', location:it.loc, wa:'Hello TeamSamson! I need cover in ' + it.title + '.' }) },
+  steps:       { label:'Step',       items:STEPS,       foot: it => ({ primary:'Start with a briefing', wa:'Hello TeamSamson! I would like to start with a confidential briefing.' }) }
+};
 
-function renderServices(){
-  document.getElementById('services-grid').innerHTML = services.map(s => `
-    <button onclick="openService(${s.id})" class="text-left bg-surface border hairline hover:border-gold/60 rounded-lg p-6 transition flex flex-col justify-between">
-      <div>
-        <div class="w-12 h-12 rounded-md bg-ink border hairline flex items-center justify-center text-gold text-xl mb-4">${s.icon}</div>
-        <h3 class="font-display text-2xl mb-2">${s.title}</h3>
-        <p class="text-sm text-paper/60 mb-5 leading-relaxed">${s.teaser}</p>
-      </div>
-      <span class="text-sm text-goldsoft font-bold">See details →</span>
-    </button>`).join('');
+/* =====================================================================
+   RENDER
+   ===================================================================== */
+function ph(key, label, opts){
+  opts = opts || {};
+  return '<div class="ph" style="aspect-ratio:' + (opts.ratio || '4/3') + '">' + imgTag({ keys:[key], w:800, h:600, label:label }) + (opts.extra || '') + '</div>';
 }
-function openService(id){
-  const s = services.find(x=>x.id===id);
-  document.getElementById('service-modal-title').textContent = s.title;
-  document.getElementById('service-modal-body').innerHTML = `
-    <p class="text-paper/70 text-sm leading-relaxed mb-4">${s.body}</p>
-    <p class="text-[11px] uppercase tracking-[.18em] text-muted mb-2">What's included</p>
-    <ul class="space-y-2 mb-4">${s.included.map(i=>`<li class="flex gap-2 text-sm border hairline rounded-md px-3 py-2.5 bg-ink"><span class="tick">✓</span><span>${i}</span></li>`).join('')}</ul>
-    <div class="border border-gold/30 bg-gold/10 rounded-md p-3 text-xs text-paper/80 mb-4"><strong>Best for:</strong> ${s.best}</div>
-    <div class="flex flex-col sm:flex-row gap-2">
-      <a href="${waLink('Hello TeamSamson! I need "'+s.title+'" — please assess me.')}" target="_blank" rel="noopener" class="flex-1 text-center bg-[#25D366] text-white font-bold text-sm px-5 py-3 rounded-md">Ask on WhatsApp</a>
-      <button onclick="closeModal('service-modal');presetQuote('${s.title}')" class="flex-1 text-sm font-semibold px-5 py-3 rounded-md border hairline hover:border-gold transition">Request this service →</button>
-    </div>`;
-  openModal('service-modal');
+function svcCard(s, i, bullets){
+  return '<article class="card">'
+    + ph(s.key, s.title, { extra:'<span class="badge">' + icon(s.icon) + '</span>' })
+    + '<div class="card-body"><h3>' + s.title + '</h3><p>' + s.teaser + '</p>'
+    + (bullets ? '<ul class="mini">' + s.included.slice(0,3).map(x => '<li>' + icon('check') + '<span>' + x + '</span></li>').join('') + '</ul>' : '')
+    + '<button type="button" class="card-cta stretch" data-open="services:' + i + '" aria-label="See details: ' + esc(s.title) + '">See details ' + icon('chev-r') + '</button></div></article>';
 }
-function presetQuote(title){
-  const sel = document.getElementById('quote-service');
-  if(sel){ [...sel.options].forEach(o=>{ if(o.text===title) sel.value=o.value||o.text; }); if([...sel.options].some(o=>o.text===title)) sel.selectedIndex=[...sel.options].findIndex(o=>o.text===title); }
-  openModal('quote-modal');
+function ocard(it, i, coll, withSub){
+  return '<article class="ocard">' + ph(it.key, it.title)
+    + '<div class="ocard-txt"><div><h3>' + it.title + '</h3>' + (withSub ? '<p>' + it.sub + '</p>' : '') + '</div>'
+    + '<button type="button" class="go stretch" data-open="' + coll + ':' + i + '" aria-label="View: ' + esc(it.title) + '">' + icon('chev-r') + '</button></div></article>';
+}
+function rowItem(it, i, coll){
+  return '<article class="row">' + ph(it.key, it.title)
+    + '<div><h3>' + it.title + '</h3><p>' + it.sub + '</p></div>'
+    + '<button type="button" class="go stretch" data-open="' + coll + ':' + i + '" aria-label="View: ' + esc(it.title) + '">' + icon('chev-r') + '</button></article>';
+}
+function stepItem(s, i){
+  return '<li class="step"><span class="step-num" aria-hidden="true">' + (i + 1) + '</span>'
+    + '<article class="card">' + ph(s.key, s.title, { ratio:'16/9' })
+    + '<div class="card-body"><h3>' + s.title + '</h3><p>' + s.teaser + '</p>'
+    + '<button type="button" class="card-cta stretch" data-open="steps:' + i + '" aria-label="Step ' + (i + 1) + ' details: ' + esc(s.title) + '">Details ' + icon('chev-r') + '</button></div></article></li>';
+}
+function briefForm(p){
+  const opts = ['Close Protection','VIP Security','Protocol Management','Security Consulting','Event Cover (mixed)','Other / Not sure'];
+  return '<form class="form" data-brief id="' + p + '-form">'
+    + '<div class="f-row"><div class="f"><label for="' + p + '-name">Your name *</label><input id="' + p + '-name" name="name" required autocomplete="name" placeholder="Full name"></div>'
+    + '<div class="f"><label for="' + p + '-phone">Phone / WhatsApp *</label><input id="' + p + '-phone" name="phone" type="tel" inputmode="tel" required autocomplete="tel" placeholder="+234 …"></div></div>'
+    + '<div class="f"><label for="' + p + '-service">Service needed *</label><select id="' + p + '-service" name="service" required><option value="" disabled selected>Choose a service</option>' + opts.map(o => '<option>' + o + '</option>').join('') + '</select></div>'
+    + '<div class="f-row"><div class="f"><label for="' + p + '-date">Date</label><input id="' + p + '-date" name="date" type="date"></div>'
+    + '<div class="f"><label for="' + p + '-loc">Location(s)</label><input id="' + p + '-loc" name="location" placeholder="e.g. Redemption City + Ikeja"></div></div>'
+    + '<div class="f"><label for="' + p + '-details">Details</label><textarea id="' + p + '-details" name="details" rows="3" placeholder="Principals, guest count, venues, concerns…"></textarea></div>'
+    + '<button type="submit" class="btn btn-wa btn-block">' + icon('wa') + 'Send brief on WhatsApp</button>'
+    + '<p class="fine" style="text-align:center">Opens WhatsApp with your brief addressed to TeamSamson. Confidential. No payment taken here.</p>'
+    + (p === 'c' ? '<a class="mail-alt" href="mailto:' + CONFIG.email + '">Prefer email? ' + CONFIG.email + '</a>' : '')
+    + '</form>';
 }
 function renderFaq(){
-  document.getElementById('faq-list').innerHTML = faqs.map(([q,a],i)=>`
-    <div class="accordion-item ${i===0?'open':''}">
-      <button class="accordion-q" onclick="this.parentElement.classList.toggle('open')"><span>${q}</span><span class="acc-icon">+</span></button>
-      <div class="accordion-a"><p class="px-4 pb-4 text-sm text-paper/65 leading-relaxed">${a}</p></div>
-    </div>`).join('');
+  $('#faq-list').innerHTML = FAQS.map((f, i) =>
+    '<div class="acc' + (i === 0 ? ' open' : '') + '" data-faq="' + esc((f[0] + ' ' + f[1]).toLowerCase()) + '">'
+    + '<h3><button type="button" class="acc-q" id="faq-q' + i + '" aria-expanded="' + (i === 0) + '" aria-controls="faq-a' + i + '"><span>' + f[0] + '</span>' + icon('plus') + '</button></h3>'
+    + '<div class="acc-a" id="faq-a' + i + '" role="region" aria-labelledby="faq-q' + i + '"><div><p>' + f[1] + '</p></div></div></div>').join('');
 }
-function submitBrief(e){
-  e.preventDefault();
-  const f = e.target, d = new FormData(f);
-  const msg = "Hello TeamSamson! Protection brief from website:\n\n*PROTECTION BRIEF*\nName: "+d.get('name')+"\nPhone: "+d.get('phone')+"\nService: "+(d.get('service')||'Not specified')+"\nDate: "+(d.get('date')||'Flexible')+"\nLocation: "+(d.get('location')||'Not specified')+"\n\nDetails:\n"+(d.get('details')||'None given')+"\n\nPlease reply with assessment and quote.";
-  window.open(waLink(msg), "_blank");
-}
-function openModal(id){ const m=document.getElementById(id); if(!m)return; m.classList.remove('hidden'); m.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
-function closeModal(id){ const m=document.getElementById(id); if(!m)return; m.classList.add('hidden'); m.setAttribute('aria-hidden','true'); if(!document.querySelector('.modal:not(.hidden)')) document.body.style.overflow=''; }
-
-document.addEventListener('DOMContentLoaded', () => {
-  renderServices(); renderFaq();
-  document.getElementById('footer-year').textContent = '© ' + new Date().getFullYear() + ' TeamSamson. All rights reserved.';
-  const boxes = document.querySelectorAll('#threat-check input');
-  const result = document.getElementById('threat-result');
-  boxes.forEach(b=>b.addEventListener('change', ()=>{
-    const n=[...boxes].filter(x=>x.checked).length;
-    if(!n){ result.classList.add('hidden'); return; }
-    result.classList.remove('hidden');
-    result.innerHTML = n===1 ? "<strong>Recommendation:</strong> a light detail or protocol officer likely covers it — message us for confirmation."
-      : n===2 ? "<strong>Recommendation:</strong> you likely need a 2-man detail + advance check. Tap below to get assessed."
-      : "<strong>Recommendation:</strong> you likely need a full detail. Contact us today — treat as priority.";
-  }));
-  document.addEventListener('keydown', e=>{
-    if(e.key==='Escape') document.querySelectorAll('.modal:not(.hidden)').forEach(m=>closeModal(m.id));
+const TABS = [
+  { id:'home',     label:'Home',     icon:'home' },
+  { id:'services', label:'Services', icon:'shield' },
+  { id:'process',  label:'Process',  icon:'route' },
+  { id:'coverage', label:'Coverage', icon:'pin' },
+  { id:'contact',  label:'Contact',  icon:'chat' }
+];
+function renderAll(){
+  $('#tabs').innerHTML = TABS.map(t => '<a href="#/' + t.id + '" data-tab="' + t.id + '">' + t.label + '</a>').join('');
+  $('#dock').innerHTML = TABS.map(t => '<a class="dock-item" href="#/' + t.id + '" data-tab="' + t.id + '">' + icon(t.icon) + '<span>' + t.label + '</span></a>').join('');
+  $('#home-services').innerHTML = SERVICES.map((s, i) => svcCard(s, i, false)).join('');
+  $('#svc-list').innerHTML      = SERVICES.map((s, i) => svcCard(s, i, true)).join('');
+  $('#sector-grid').innerHTML   = SECTORS.map((s, i) => ocard(s, i, 'sectors', true)).join('');
+  $('#deploy-list').innerHTML   = DEPLOYMENTS.map((d, i) => rowItem(d, i, 'deployments')).join('');
+  $('#step-list').innerHTML     = STEPS.map(stepItem).join('');
+  $('#region-grid').innerHTML   = REGIONS.map((r, i) => ocard(r, i, 'regions', false)).join('');
+  $('#why-grid').innerHTML      = WHY.map(w => '<div class="tile">' + icon(w.icon) + '<h3>' + w.t + '</h3><p>' + w.d + '</p></div>').join('');
+  $('#shortcuts').innerHTML     = SHORTCUTS.map(s => '<a class="tile" href="' + s.href + '">' + icon(s.icon) + '<h3>' + s.t + '</h3><p>' + s.d + '</p></a>').join('');
+  $('#first-msg').innerHTML     = FIRST_MSG.map(x => '<li>' + icon('check') + '<span>' + x + '</span></li>').join('');
+  $('#commitments').innerHTML   = COMMITMENTS.map(x => '<li>' + icon('check') + '<span>' + x + '</span></li>').join('');
+  $('#starter-wa').href = waLink('Hello TeamSamson! I would like a confidential briefing.\n\nWho needs covering:\nDates and times:\nVenues and locations:\nGuest count:\nKnown concerns:');
+  $('#threat-check').innerHTML  = THREAT.map(t => '<label class="opt"><input type="checkbox" value="' + esc(t) + '"><span>' + t + '</span></label>').join('');
+  $$('[data-brief-slot]').forEach(el => { el.innerHTML = briefForm(el.dataset.briefSlot); });
+  $$('[data-slot]').forEach(el => {
+    const p = el.dataset.slot.split('|');
+    el.innerHTML = imgTag({ keys:[p[0]], w:+p[1], h:+p[2], label:p[3], pos:p[4] || '', eager: p[0] === 'hero-home' });
   });
+  $$('input[type=date]').forEach(d => { d.min = new Date().toISOString().slice(0, 10); });
+  renderFaq();
+  $('#footer-year').textContent = '© ' + new Date().getFullYear() + ' TeamSamson. All rights reserved.';
+}
+
+/* =====================================================================
+   SHEETS  (stack + history so the phone Back button closes them)
+   ===================================================================== */
+const root = document.documentElement;
+const shell = $('#shell');
+const sheets = { detail:$('#detail-sheet'), quote:$('#quote-sheet'), lightbox:$('#lightbox') };
+const stack = [];
+let pushed = false, lastFocus = null, detailState = null, detailCta = null, lbState = null;
+
+function syncInert(){
+  shell.inert = stack.length > 0;
+  stack.forEach((s, i) => { s.inert = i !== stack.length - 1; });
+}
+function openSheet(el){
+  if (stack.includes(el)) return;
+  if (!stack.length) {
+    lastFocus = document.activeElement;
+    try { history.pushState({ sheet:1 }, '', location.href); pushed = true; } catch (_) { pushed = false; }
+    root.classList.add('lock');
+  }
+  stack.push(el);
+  el.classList.add('open'); el.setAttribute('aria-hidden', 'false');
+  syncInert();
+  const p = $('.sheet-panel', el) || el;
+  p.focus({ preventScroll:true });
+}
+function hideTop(){
+  const el = stack.pop(); if (!el) return;
+  el.classList.remove('open'); el.setAttribute('aria-hidden', 'true');
+  if (!stack.length) {
+    root.classList.remove('lock'); pushed = false;
+    if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll:true });
+  }
+  syncInert();
+}
+function quietClose(el){
+  const i = stack.indexOf(el); if (i > -1) stack.splice(i, 1);
+  el.classList.remove('open'); el.setAttribute('aria-hidden', 'true');
+  syncInert();
+}
+function closeTop(){
+  if (!stack.length) return;
+  if (stack.length === 1 && pushed) { history.back(); return; }
+  hideTop();
+}
+window.addEventListener('popstate', () => {
+  if (!stack.length) return;
+  const wasLast = stack.length === 1;
+  hideTop();
+  if (!wasLast) { try { history.pushState({ sheet:1 }, '', location.href); pushed = true; } catch (_) { pushed = false; } }
 });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeTop(); });
+
+function enableSwipe(sheet){
+  const panel = $('.sheet-panel', sheet), grab = $('.sheet-grab', sheet);
+  if (!panel || !grab) return;
+  let y0 = null, dy = 0;
+  grab.addEventListener('pointerdown', e => { y0 = e.clientY; dy = 0; panel.style.transition = 'none'; try { grab.setPointerCapture(e.pointerId); } catch (_) {} });
+  grab.addEventListener('pointermove', e => { if (y0 === null) return; dy = Math.max(0, e.clientY - y0); panel.style.transform = 'translateY(' + dy + 'px)'; });
+  const end = () => {
+    if (y0 === null) return;
+    const far = dy > 100; y0 = null;
+    panel.style.transition = 'transform .2s ease';
+    if (far) { panel.style.transform = 'translateY(100%)'; setTimeout(() => { panel.style.transition = ''; panel.style.transform = ''; closeTop(); }, 190); }
+    else { panel.style.transform = ''; setTimeout(() => { panel.style.transition = ''; }, 220); }
+  };
+  grab.addEventListener('pointerup', end); grab.addEventListener('pointercancel', end);
+}
+
+/* ---- detail sheet ---- */
+function renderDetail(){
+  const C = COLL[detailState.coll], it = C.items[detailState.idx];
+  const facts = it.facts ? '<dl class="facts">' + it.facts.map(f => '<div class="fact"><dt>' + f[0] + '</dt><dd>' + f[1] + '</dd></div>').join('') + '</dl>' : '';
+  const gal = it.gallery ? '<div class="gallery-wrap"><h3 class="d-h">In the field</h3><div class="gallery">'
+    + it.gallery.map((cap, n) => '<button type="button" class="g-item" data-lb data-optional aria-label="View photo: ' + esc(cap) + '"><div class="ph" style="aspect-ratio:4/3">' + imgTag({ keys:[it.key + '-g' + (n + 1)], w:800, h:600, label:cap, alt:cap }) + '</div><span class="g-cap">' + cap + '</span></button>').join('')
+    + '</div></div>' : '';
+  $('#detail-body').innerHTML =
+    '<div class="ph d-hero">' + imgTag({ keys:[it.key + '-hero', it.key], w:1280, h:720, label:it.title + ' photo', eager:true }) + '</div>'
+    + '<div class="d-main"><h2 class="d-title" id="detail-title">' + it.title + '</h2><p class="d-teaser">' + it.teaser + '</p>'
+    + facts + '<p class="d-body">' + it.body + '</p>'
+    + '<h3 class="d-h">' + (it.incTitle || 'What\'s included') + '</h3><ul class="checks">' + it.included.map(x => '<li>' + icon('check') + '<span>' + x + '</span></li>').join('') + '</ul>'
+    + gal + '<div class="callout"><strong>Best for:</strong> ' + it.best + '</div></div>';
+  detailCta = C.foot(it);
+  $('#detail-foot').innerHTML =
+    '<a class="btn btn-wa" href="' + waLink(detailCta.wa) + '" target="_blank" rel="noopener">' + icon('wa') + 'Ask on WhatsApp</a>'
+    + '<button type="button" class="btn btn-gold" data-quote-preset>' + detailCta.primary + '</button>';
+  $('#detail-count').textContent = C.label + ' ' + (detailState.idx + 1) + ' of ' + C.items.length;
+  $('#detail-body').scrollTop = 0;
+}
+function showDetail(coll, idx){
+  detailState = { coll:coll, idx:idx };
+  renderDetail();
+  openSheet(sheets.detail);
+}
+function detailNav(d){
+  const n = COLL[detailState.coll].items.length;
+  detailState.idx = (detailState.idx + d + n) % n;
+  renderDetail();
+}
+
+/* ---- quote sheet ---- */
+function openQuote(preset){
+  preset = preset || {};
+  const f = $('#q-form');
+  if (preset.service) { const o = Array.from(f.elements.service.options).find(x => x.text === preset.service); if (o) f.elements.service.value = o.value || o.text; }
+  if (preset.location) f.elements.location.value = preset.location;
+  if (preset.details)  f.elements.details.value = preset.details;
+  const fromDetail = stack.includes(sheets.detail);
+  openSheet(sheets.quote);
+  if (fromDetail) quietClose(sheets.detail);
+}
+function submitBrief(f){
+  const d = new FormData(f);
+  const msg = 'Hello TeamSamson! Protection brief from website:\n\n*PROTECTION BRIEF*\nName: ' + d.get('name') + '\nPhone: ' + d.get('phone') + '\nService: ' + (d.get('service') || 'Not specified') + '\nDate: ' + (d.get('date') || 'Flexible') + '\nLocation: ' + (d.get('location') || 'Not specified') + '\n\nDetails:\n' + (d.get('details') || 'None given') + '\n\nPlease reply with assessment and quote.';
+  const url = waLink(msg);
+  const w = window.open(url, '_blank', 'noopener');
+  if (!w) location.href = url;
+  toast('Opening WhatsApp with your brief…');
+}
+
+/* ---- lightbox ---- */
+function openLightbox(btn){
+  const imgs = $$('img', btn.closest('.gallery'));
+  const mine = $('img', btn);
+  lbState = { items: imgs.map(i => ({ src: i.currentSrc || i.src, cap: i.alt || i.dataset.label || '' })), i: Math.max(0, imgs.indexOf(mine)) };
+  showLb();
+  openSheet(sheets.lightbox);
+}
+function showLb(){
+  const it = lbState.items[lbState.i];
+  $('#lb-img').src = it.src; $('#lb-img').alt = it.cap; $('#lb-cap').textContent = it.cap;
+  const multi = lbState.items.length > 1;
+  $('.lb-prev').hidden = !multi; $('.lb-next').hidden = !multi;
+}
+function lbNav(d){ const n = lbState.items.length; lbState.i = (lbState.i + d + n) % n; showLb(); }
+
+/* ---- toast ---- */
+let toastT;
+function toast(msg){
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 3200);
+}
+
+/* =====================================================================
+   ROUTER  (#/home, #/services, ... ; old anchors still work)
+   ===================================================================== */
+const ALIAS = { protocol:'process', faq:'contact', why:'home', top:'home' };
+const pages = $$('.page');
+let current = null;
+function route(){
+  let t = (location.hash.match(/^#\/?([a-z]+)/) || [])[1];
+  t = ALIAS[t] || t;
+  if (!TABS.some(x => x.id === t)) t = 'home';
+  if (t === current) return;
+  const first = current === null;
+  current = t;
+  pages.forEach(p => {
+    const on = p.id === 'page-' + t;
+    p.hidden = !on;
+    if (on) { p.classList.remove('enter'); void p.offsetWidth; p.classList.add('enter'); document.title = p.dataset.title || document.title; }
+  });
+  $$('[data-tab]').forEach(a => { if (a.dataset.tab === t) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+  if (!first) {
+    window.scrollTo(0, 0);
+    const h = $('#page-' + t + ' h1'); if (h) h.focus({ preventScroll:true });
+  }
+}
+window.addEventListener('hashchange', route);
+
+/* =====================================================================
+   EVENTS
+   ===================================================================== */
+document.addEventListener('click', e => {
+  const t = e.target;
+  let el;
+  if ((el = t.closest('[data-open]'))) { const p = el.dataset.open.split(':'); showDetail(p[0], +p[1]); return; }
+  if (t.closest('[data-close]')) { closeTop(); return; }
+  if ((el = t.closest('[data-quote-preset]'))) { openQuote(detailCta); return; }
+  if ((el = t.closest('[data-quote]'))) { openQuote(); return; }
+  if ((el = t.closest('[data-detail-nav]'))) { detailNav(+el.dataset.detailNav); return; }
+  if ((el = t.closest('[data-lb-nav]'))) { lbNav(+el.dataset.lbNav); return; }
+  if ((el = t.closest('[data-lb]'))) { openLightbox(el); return; }
+  if ((el = t.closest('.acc-q'))) {
+    const acc = el.closest('.acc'), open = !acc.classList.contains('open');
+    acc.classList.toggle('open', open); el.setAttribute('aria-expanded', String(open)); return;
+  }
+  if ((el = t.closest('a[data-tab]'))) {
+    if (el.dataset.tab === current) { e.preventDefault(); window.scrollTo({ top:0, behavior:'smooth' }); }
+  }
+});
+
+document.addEventListener('submit', e => {
+  const f = e.target.closest('form[data-brief]'); if (!f) return;
+  e.preventDefault(); submitBrief(f);
+});
+
+/* threat check */
+function initThreat(){
+  const boxes = $$('#threat-check input'), out = $('#threat-result');
+  boxes.forEach(b => b.addEventListener('change', () => {
+    b.closest('.opt').classList.toggle('on', b.checked);
+    const n = boxes.filter(x => x.checked).length;
+    if (!n) { out.hidden = true; return; }
+    out.hidden = false;
+    out.innerHTML = n === 1 ? '<strong>Recommendation:</strong> a light detail or protocol officer likely covers it. Message us for confirmation.'
+      : n === 2 ? '<strong>Recommendation:</strong> you likely need a 2-man detail and an advance check. Tap below to get assessed.'
+      : '<strong>Recommendation:</strong> you likely need a full detail. Contact us today and treat it as priority.';
+  }));
+  $('#tc-go').addEventListener('click', () => {
+    const picked = boxes.filter(x => x.checked).map(x => '- ' + x.value);
+    openQuote(picked.length ? { details:'Threat check answers:\n' + picked.join('\n') } : {});
+  });
+}
+
+/* FAQ search */
+function initFaq(){
+  $('#faq-search').addEventListener('input', e => {
+    const q = e.target.value.trim().toLowerCase();
+    let shown = 0;
+    $$('.acc').forEach(a => { const hit = !q || a.dataset.faq.indexOf(q) > -1; a.hidden = !hit; if (hit) shown++; });
+    $('#faq-empty').hidden = shown > 0;
+  });
+}
+
+/* hide the floating dock while a keyboard is likely open */
+document.addEventListener('focusin', e => { if (e.target.matches('input,textarea,select')) root.classList.add('kbd'); });
+document.addEventListener('focusout', () => setTimeout(() => {
+  if (!document.activeElement || !document.activeElement.matches('input,textarea,select')) root.classList.remove('kbd');
+}, 50));
+
+/* =====================================================================
+   INIT
+   ===================================================================== */
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+renderAll(); initThreat(); initFaq();
+enableSwipe(sheets.detail); enableSwipe(sheets.quote);
+route();
+
+})();
 </script>
 </body>
 </html>
